@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="view.ViewTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-04-26T17:21:30" hostname="bogon" time="0.064">
+  <properties/>
+  <testcase name="testGetUserChoice()" classname="view.ViewTest" time="0.033"/>
+  <testcase name="testGetInputFilePath_InvalidPathThenValidPath()" classname="view.ViewTest" time="0.009"/>
+  <testcase name="testGetLastNameToSearch()" classname="view.ViewTest" time="0.004"/>
+  <testcase name="isPathValid()" classname="view.ViewTest" time="0.007"/>
+  <testcase name="testGetInputFilePath_ValidPath()" classname="view.ViewTest" time="0.005"/>
+  <system-out><![CDATA[=======================
+Please enter your choice: (Enter 1, 2 or 3) 
+1. Validate application and add
+2. Search and display according last name
+3. Exit
+Please enter a path and the json file name to the file: (e.g: ./resources/WillSmith.json)
+Invalid path! Please try again.
+Please enter a path and the json file name to the file: (e.g: ./resources/WillSmith.json)
+Path is valid.
+Please enter last name to be searched and display: 
+Path is valid.
+Path is valid.
+Path is valid.
+Path is valid.
+Invalid path! Please try again.
+Please enter a path and the json file name to the file: (e.g: ./resources/WillSmith.json)
+Path is valid.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

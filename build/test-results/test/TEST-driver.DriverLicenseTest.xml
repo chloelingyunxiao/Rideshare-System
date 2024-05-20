@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="driver.DriverLicenseTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-04-26T17:21:30" hostname="bogon" time="0.049">
+  <properties/>
+  <testcase name="testGetState()" classname="driver.DriverLicenseTest" time="0.035"/>
+  <testcase name="testGetAddress()" classname="driver.DriverLicenseTest" time="0.001"/>
+  <testcase name="testGetName()" classname="driver.DriverLicenseTest" time="0.002"/>
+  <testcase name="testGetLicenseUniqueNumber()" classname="driver.DriverLicenseTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>VehicleInsurance.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">vehicle</a> &gt; <span class="el_source">VehicleInsurance.java</span></div><h1>VehicleInsurance.java</h1><pre class="source lang-java linenums">package vehicle;
+
+import driver.Driver;
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.List;
+import java.util.Objects;
+import other.Name;
+
+
+/**
+ * Represents insurance information for a vehicle.
+ */
+public class VehicleInsurance {
+
+  private Name officialOwner;
+  private List&lt;Name&gt; peopleCoveredByInsurance;
+  private LocalDate expirationDate;
+
+  /**
+   * Constructor of VehicleInsurance.
+   *
+   * @param officialOwner            the insurance official owner
+   * @param peopleCoveredByInsurance the people's names list, who covered by insurance
+   * @param expirationDate           insurance expiration date.
+   */
+  public VehicleInsurance(Name officialOwner,
+<span class="fc" id="L28">      List&lt;Name&gt; peopleCoveredByInsurance, LocalDate expirationDate) {</span>
+<span class="fc" id="L29">    this.officialOwner = officialOwner;</span>
+<span class="fc" id="L30">    this.peopleCoveredByInsurance = peopleCoveredByInsurance;</span>
+<span class="fc" id="L31">    this.expirationDate = expirationDate;</span>
+<span class="fc" id="L32">  }</span>
+
+  /**
+   * Get the insurance official owner
+   *
+   * @return the insurance official owner
+   */
+  public Name getOfficialOwner() {
+<span class="fc" id="L40">    return officialOwner;</span>
+  }
+
+  /**
+   * Get the people's names list, who covered by insurance
+   *
+   * @return people's names list, who covered by insurance
+   */
+  public List&lt;Name&gt; getPeopleCoveredByInsurance() {
+<span class="fc" id="L49">    return peopleCoveredByInsurance;</span>
+  }
+
+  /**
+   * Get insurance expiration date
+   *
+   * @return insurance expiration date
+   */
+  public LocalDate getExpirationDate() {
+<span class="fc" id="L58">    return expirationDate;</span>
+  }
+
+  /**
+   * Indicates whether some other object is &quot;equal to&quot; this one.
+   *
+   * @param o The reference object with which to compare.
+   * @return true if this object is the same as the obj argument; false otherwise.
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="pc bpc" id="L69" title="1 of 2 branches missed.">    if (this == o) {</span>
+<span class="nc" id="L70">      return true;</span>
+    }
+<span class="pc bpc" id="L72" title="2 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) {</span>
+<span class="nc" id="L73">      return false;</span>
+    }
+<span class="fc" id="L75">    VehicleInsurance that = (VehicleInsurance) o;</span>
+<span class="pc bpc" id="L76" title="2 of 4 branches missed.">    return Objects.equals(officialOwner, that.officialOwner) &amp;&amp; Objects.equals(</span>
+        peopleCoveredByInsurance,
+<span class="pc bpc" id="L78" title="1 of 2 branches missed.">        that.peopleCoveredByInsurance) &amp;&amp; Objects.equals(expirationDate,</span>
+        that.expirationDate);
+  }
+
+  /**
+   * Returns a hash code value for the object.
+   *
+   * @return A hash code value for this object.
+   */
+  @Override
+  public int hashCode() {
+<span class="nc" id="L89">    return Objects.hash(officialOwner, peopleCoveredByInsurance,</span>
+        expirationDate);
+  }
+
+  /**
+   * Returns a string representation of the object.
+   *
+   * @return A string representation of the VehicleInformation object.
+   */
+  @Override
+  public String toString() {
+<span class="nc" id="L100">    return &quot;VehicleInsurance{&quot; +</span>
+        &quot;officialOwner=&quot; + officialOwner +
+        &quot;, peopleCoveredByInsuranceLicenseUniqueNumbers=&quot;
+        + peopleCoveredByInsurance +
+        &quot;, expirationDate=&quot; + expirationDate +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

@@ -1,0 +1,80 @@
+{
+  "driver": {
+    "name": {
+      "firstName": "Patrica",
+      "lastName": "Fuller"
+    },
+    "birthdate": "1990-01-01",
+    "driverLicense": {
+      "licenseUniqueNumber": 11111,
+      "name": {
+        "firstName": "Patrica",
+        "lastName": "Fuller"
+      },
+      "address": "123 Main St",
+      "birthdate": "1990-01-01",
+      "country": "US",
+      "stateOfInsurance": "NY",
+      "issuanceDate": "2022-01-01",
+      "expirationDate": "2025-01-01"
+    },
+    "driverHistories": [
+      {
+        "violationDate": "2023-01-01",
+        "violationType": "DistractedDriving"
+      },
+      {
+        "violationDate": "2022-06-01",
+        "violationType": "ParkingViolation"
+      }
+    ]
+  },
+  "vehicle": {
+    "vehicleInformation": {
+      "make": "Ford",
+      "model": "Explore",
+      "year": 2012,
+      "owner": {
+        "firstName": "Patrica",
+        "lastName": "Fuller"
+      },
+      "color": "Blue",
+      "licensePlateNumber": "ZZW-123"
+    },
+    "vehicleInsurance": {
+      "officialOwner": {
+        "firstName": "Patrica",
+        "lastName": "Fuller"
+      },
+      "peopleNameCoveredByInsurance": [
+        {
+          "firstName": "Patrica",
+          "lastName": "Fuller"
+        },
+        {
+          "firstName": "Steve",
+          "lastName": "Hollie"
+        }
+      ],
+      "expirationDate": "2025-12-31"
+    },
+    "vehicleHistories": [
+      {
+        "vehicleIncidentDate": "2020-03-01",
+        "vehicleIncidentType": "FenderBender",
+        "offendingDriverName": {
+          "firstName": "Patrica",
+          "lastName": "Fuller"
+        }
+      },
+      {
+        "vehicleIncidentDate": "2021-12-21",
+        "vehicleIncidentType": "Speeding",
+        "offendingDriverName": {
+          "firstName": "Steve",
+          "lastName": "Joe"
+        }
+      }
+    ]
+  }
+}

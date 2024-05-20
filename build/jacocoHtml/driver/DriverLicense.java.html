@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DriverLicense.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">driver</a> &gt; <span class="el_source">DriverLicense.java</span></div><h1>DriverLicense.java</h1><pre class="source lang-java linenums">package driver;
+
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.Objects;
+import other.Name;
+
+/**
+ * Represents driver license's information
+ */
+public class DriverLicense {
+
+  private Integer licenseUniqueNumber;
+  private Name name;
+  private String address;
+  private LocalDate birthdate;
+  private String country;
+  private String stateOfInsurance;
+
+  private LocalDate issuanceDate;
+
+  private LocalDate expirationDate;
+
+  /**
+   * Constructor of driver license
+   *
+   * @param licenseUniqueNumber driver license number, which is a unique number
+   * @param name                - driver's name
+   * @param address             - driver's address
+   * @param birthdate           driver's birthdate
+   * @param country             driver's country
+   * @param stateOfInsurance    driver's state of insurance
+   * @param issuanceDate        driver's license issuance date
+   * @param expirationDate      driver's license expiration date
+   */
+  public DriverLicense(Integer licenseUniqueNumber, Name name, String address, LocalDate birthdate,
+<span class="fc" id="L37">      String country, String stateOfInsurance, LocalDate issuanceDate, LocalDate expirationDate) {</span>
+<span class="fc" id="L38">    this.licenseUniqueNumber = licenseUniqueNumber;</span>
+<span class="fc" id="L39">    this.name = name;</span>
+<span class="fc" id="L40">    this.address = address;</span>
+<span class="fc" id="L41">    this.birthdate = birthdate;</span>
+<span class="fc" id="L42">    this.country = country;</span>
+<span class="fc" id="L43">    this.stateOfInsurance = stateOfInsurance;</span>
+<span class="fc" id="L44">    this.issuanceDate = issuanceDate;</span>
+<span class="fc" id="L45">    this.expirationDate = expirationDate;</span>
+<span class="fc" id="L46">  }</span>
+
+  /**
+   * Getter method. Get license unique number
+   *
+   * @return license unique number
+   */
+  public Integer getLicenseUniqueNumber() {
+<span class="fc" id="L54">    return licenseUniqueNumber;</span>
+  }
+
+  /**
+   * Getter method. Get license name
+   *
+   * @return license name
+   */
+  public Name getName() {
+<span class="fc" id="L63">    return name;</span>
+  }
+
+  /**
+   * Getter method. Get driver's address
+   *
+   * @return driver's address
+   */
+  public String getAddress() {
+<span class="fc" id="L72">    return address;</span>
+  }
+
+  /**
+   * Getter method. Get driver's birthdate
+   *
+   * @return driver's birthdate
+   */
+  public LocalDate getBirthdate() {
+<span class="fc" id="L81">    return birthdate;</span>
+  }
+
+  /**
+   * Getter method. Get driver's country
+   *
+   * @return driver's country
+   */
+  public String getCountry() {
+<span class="fc" id="L90">    return country;</span>
+  }
+
+  /**
+   * Getter method. Get driver's state of insurance
+   *
+   * @return driver's state of insurance
+   */
+  public String getStateOfInsurance() {
+<span class="fc" id="L99">    return stateOfInsurance;</span>
+  }
+
+  /**
+   * Getter method. Get driver license issuance date
+   *
+   * @return driver license issuance date
+   */
+  public LocalDate getIssuanceDate() {
+<span class="fc" id="L108">    return issuanceDate;</span>
+  }
+
+  /**
+   * Getter method. Get driver license expiration date
+   *
+   * @return driver license expiration date
+   */
+  public LocalDate getExpirationDate() {
+<span class="fc" id="L117">    return expirationDate;</span>
+  }
+
+  /**
+   * Indicates whether some other object is &quot;equal to&quot; this one.
+   *
+   * @param o the reference object with which to compare.
+   * @return {@code true} if this object is the same as the obj argument; {@code false} otherwise.
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="pc bpc" id="L128" title="1 of 2 branches missed.">    if (this == o) {</span>
+<span class="nc" id="L129">      return true;</span>
+    }
+<span class="pc bpc" id="L131" title="2 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) {</span>
+<span class="nc" id="L132">      return false;</span>
+    }
+<span class="fc" id="L134">    DriverLicense that = (DriverLicense) o;</span>
+<span class="pc bpc" id="L135" title="1 of 2 branches missed.">    return Objects.equals(licenseUniqueNumber, that.licenseUniqueNumber)</span>
+<span class="pc bpc" id="L136" title="2 of 4 branches missed.">        &amp;&amp; Objects.equals(name, that.name) &amp;&amp; Objects.equals(address,</span>
+<span class="pc bpc" id="L137" title="1 of 2 branches missed.">        that.address) &amp;&amp; Objects.equals(birthdate, that.birthdate)</span>
+<span class="pc bpc" id="L138" title="2 of 4 branches missed.">        &amp;&amp; Objects.equals(country, that.country) &amp;&amp; Objects.equals(</span>
+<span class="pc bpc" id="L139" title="1 of 2 branches missed.">        stateOfInsurance, that.stateOfInsurance) &amp;&amp; Objects.equals(issuanceDate,</span>
+<span class="pc bpc" id="L140" title="1 of 2 branches missed.">        that.issuanceDate) &amp;&amp; Objects.equals(expirationDate, that.expirationDate);</span>
+  }
+
+  /**
+   * Returns a hash code value for the object. This method is supported for the benefit of hash
+   * tables such as those provided by {@link java.util.HashMap}.
+   *
+   * @return a hash code value for this object.
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L151">    return Objects.hash(licenseUniqueNumber, name, address, birthdate, country, stateOfInsurance,</span>
+        issuanceDate, expirationDate);
+  }
+
+  /**
+   * Returns a string representation of the object. In general, the {@code toString} method returns
+   * a string that &quot;textually represents&quot; this object. The result should be a concise but
+   * informative representation that is easy for a person to read.
+   *
+   * @return a string representation of the object.
+   */
+  @Override
+  public String toString() {
+<span class="nc" id="L164">    return &quot;DriverLicense{&quot; +</span>
+        &quot;licenseUniqueNumber=&quot; + licenseUniqueNumber +
+        &quot;, name=&quot; + name +
+        &quot;, address='&quot; + address + '\'' +
+        &quot;, birthdate=&quot; + birthdate +
+        &quot;, country='&quot; + country + '\'' +
+        &quot;, stateOfInsurance='&quot; + stateOfInsurance + '\'' +
+        &quot;, issuanceDate=&quot; + issuanceDate +
+        &quot;, expirationDate=&quot; + expirationDate +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Name.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">other</a> &gt; <span class="el_source">Name.java</span></div><h1>Name.java</h1><pre class="source lang-java linenums">package other;
+
+import java.util.Objects;
+
+/**
+ * Represents a person's name, consisting of a first name and a last name.
+ */
+public class Name {
+
+  private String firstName;
+  private String lastName;
+
+  /**
+   * Constructs a Name object with the specified first name and last name.
+   *
+   * @param firstName the first name of the person.
+   * @param lastName  the last name of the person.
+   */
+<span class="fc" id="L19">  public Name(String firstName, String lastName) {</span>
+<span class="fc" id="L20">    this.firstName = firstName;</span>
+<span class="fc" id="L21">    this.lastName = lastName;</span>
+<span class="fc" id="L22">  }</span>
+
+  /**
+   * Gets the first name of the person.
+   *
+   * @return the first name of the person.
+   */
+  public String getFirstName() {
+<span class="fc" id="L30">    return firstName;</span>
+  }
+
+  /**
+   * Gets the last name of the person.
+   *
+   * @return the last name of the person.
+   */
+  public String getLastName() {
+<span class="fc" id="L39">    return lastName;</span>
+  }
+
+  /**
+   * Indicates whether some other object is &quot;equal to&quot; this one.
+   *
+   * @param o the reference object with which to compare.
+   * @return true if this object is the same as the o argument; false otherwise.
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="fc bfc" id="L50" title="All 2 branches covered.">    if (this == o) {</span>
+<span class="fc" id="L51">      return true;</span>
+    }
+<span class="pc bpc" id="L53" title="2 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) {</span>
+<span class="nc" id="L54">      return false;</span>
+    }
+<span class="fc" id="L56">    Name diverName = (Name) o;</span>
+<span class="fc bfc" id="L57" title="All 4 branches covered.">    return Objects.equals(firstName, diverName.firstName) &amp;&amp; Objects.equals(</span>
+        lastName, diverName.lastName);
+  }
+
+  /**
+   * Returns a hash code value for the object.
+   *
+   * @return a hash code value for this object.
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L68">    return Objects.hash(firstName, lastName);</span>
+  }
+
+  /**
+   * Returns the string representation of the Name object.
+   *
+   * @return a string representation of the Name object.
+   */
+  @Override
+  public String toString() {
+<span class="nc" id="L78">    return &quot;DiverName{&quot; +</span>
+        &quot;firstName='&quot; + firstName + '\'' +
+        &quot;, lastName='&quot; + lastName + '\'' +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

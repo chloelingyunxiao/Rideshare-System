@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>View.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">view</a> &gt; <span class="el_source">View.java</span></div><h1>View.java</h1><pre class="source lang-java linenums">package view;
+
+import java.awt.print.Printable;
+import java.util.List;
+import java.util.Scanner;
+
+/**
+ * Provides methods for user interaction and input/output operations.
+ */
+<span class="nc" id="L10">public class View {</span>
+
+  /**
+   * Prompts the user to enter a file path for input.
+   *
+   * @return The user-entered file path.
+   */
+  public static String getInputFilePath() {
+<span class="fc" id="L18">    Scanner scanner = new Scanner(System.in);</span>
+    String path;
+    do {
+
+<span class="fc" id="L22">      System.out.println(</span>
+          &quot;Please enter a path and the json file name to the file: (e.g: ./resources/WillSmith.json)&quot;);
+<span class="fc" id="L24">      path = scanner.nextLine();</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">    } while (!isPathValid(path));</span>
+<span class="fc" id="L26">    return path;</span>
+  }
+
+  /**
+   * Checks if the entered file path is valid.
+   *
+   * @param path The file path to validate.
+   * @return True if the path is valid, false otherwise.
+   */
+  public static boolean isPathValid(String path) {
+<span class="fc" id="L36">    String regex = &quot;^(/|./|../)?(?:[a-zA-Z0-9_ -]+/)*[a-zA-Z0-9_ -]+\\.json$&quot;;</span>
+<span class="fc" id="L37">    boolean matches = path.matches(regex);</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">    if (!matches) {</span>
+<span class="fc" id="L39">      System.out.println(&quot;Invalid path! Please try again.&quot;);</span>
+    } else {
+<span class="fc" id="L41">      System.out.println(&quot;Path is valid.&quot;);</span>
+    }
+<span class="fc" id="L43">    return matches;</span>
+  }
+
+  /**
+   * Prompts the user to enter their choice.
+   *
+   * @return The user's choice as an integer.
+   */
+  public static int getUserChoice() {
+<span class="fc" id="L52">    Scanner scanner = new Scanner(System.in);</span>
+<span class="fc" id="L53">    System.out.println(&quot;=======================&quot;);</span>
+<span class="fc" id="L54">    System.out.println(&quot;Please enter your choice: (Enter 1, 2 or 3) \n&quot;</span>
+        + &quot;1. Validate application and add\n&quot;
+        + &quot;2. Search and display according last name\n&quot;
+        + &quot;3. Exit&quot;);
+<span class="fc" id="L58">    int userChoice = scanner.nextInt();</span>
+<span class="fc" id="L59">    return userChoice;</span>
+  }
+
+  /**
+   * Prompts the user to enter a last name for search.
+   *
+   * @return The last name entered by the user.
+   */
+  public static String getLastNameToSearch() {
+<span class="fc" id="L68">    Scanner scanner = new Scanner(System.in);</span>
+<span class="fc" id="L69">    System.out.println(&quot;Please enter last name to be searched and display: &quot;);</span>
+<span class="fc" id="L70">    String lastName = scanner.nextLine();</span>
+<span class="fc" id="L71">    return lastName;</span>
+  }
+
+  /**
+   * Converts a list to a string with newline as separators.
+   *
+   * @param list The list to be converted.
+   * @param &lt;T&gt;  The type of elements in the list.
+   * @return The string representation of the list.
+   */
+  public static &lt;T&gt; String listToString(List&lt;T&gt; list) {
+<span class="fc" id="L82">    StringBuilder listString = new StringBuilder();</span>
+<span class="fc bfc" id="L83" title="All 2 branches covered.">    for (T item : list) {</span>
+<span class="fc" id="L84">      listString.append(item.toString());</span>
+<span class="fc" id="L85">    }</span>
+<span class="fc" id="L86">    return listString.toString();</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

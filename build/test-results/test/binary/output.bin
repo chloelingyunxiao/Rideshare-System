@@ -1,0 +1,17 @@
+! =======================
+! -Please enter your choice: (Enter 1, 2 or 3) 
+!  1. Validate application and add
+! *2. Search and display according last name
+! 3. Exit
+!"ZPlease enter a path and the json file name to the file: (e.g: ./resources/WillSmith.json)
+!" Invalid path! Please try again.
+!"ZPlease enter a path and the json file name to the file: (e.g: ./resources/WillSmith.json)
+!"Path is valid.
+!#4Please enter last name to be searched and display: 
+!$Path is valid.
+!$Path is valid.
+!$Path is valid.
+!$Path is valid.
+!$ Invalid path! Please try again.
+!%ZPlease enter a path and the json file name to the file: (e.g: ./resources/WillSmith.json)
+!%Path is valid.

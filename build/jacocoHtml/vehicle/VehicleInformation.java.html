@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>VehicleInformation.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">vehicle</a> &gt; <span class="el_source">VehicleInformation.java</span></div><h1>VehicleInformation.java</h1><pre class="source lang-java linenums">package vehicle;
+
+import java.util.Objects;
+import other.Name;
+
+/**
+ * Represents information about a vehicle.
+ */
+public class VehicleInformation {
+
+  private String make;
+  private String model;
+  private Integer yearOfVehicle;
+  private Name owner;
+  private String color;
+  private String licensePlateNumber;
+
+  /**
+   * Constructs a VehicleInformation object.
+   *
+   * @param make               The make of the vehicle.
+   * @param model              The model of the vehicle.
+   * @param yearOfVehicle      The year of the vehicle.
+   * @param owner              The owner of the vehicle.
+   * @param color              The color of the vehicle.
+   * @param licensePlateNumber The license plate number of the vehicle.
+   */
+  public VehicleInformation(String make, String model, Integer yearOfVehicle, Name owner,
+<span class="fc" id="L29">      String color, String licensePlateNumber) {</span>
+<span class="fc" id="L30">    this.make = make;</span>
+<span class="fc" id="L31">    this.model = model;</span>
+<span class="fc" id="L32">    this.yearOfVehicle = yearOfVehicle;</span>
+<span class="fc" id="L33">    this.owner = owner;</span>
+<span class="fc" id="L34">    this.color = color;</span>
+<span class="fc" id="L35">    this.licensePlateNumber = licensePlateNumber;</span>
+<span class="fc" id="L36">  }</span>
+
+  /**
+   * Retrieves the make of the vehicle.
+   *
+   * @return The make of the vehicle.
+   */
+  public String getMake() {
+<span class="fc" id="L44">    return make;</span>
+  }
+
+  /**
+   * Retrieves the model of the vehicle.
+   *
+   * @return The model of the vehicle.
+   */
+  public String getModel() {
+<span class="fc" id="L53">    return model;</span>
+  }
+
+  /**
+   * Retrieves the year of the vehicle.
+   *
+   * @return The year of the vehicle.
+   */
+  public Integer getYearOfVehicle() {
+<span class="fc" id="L62">    return yearOfVehicle;</span>
+  }
+
+  /**
+   * Retrieves the owner of the vehicle.
+   *
+   * @return The owner of the vehicle.
+   */
+  public Name getOwner() {
+<span class="nc" id="L71">    return owner;</span>
+  }
+
+  /**
+   * Retrieves the color of the vehicle.
+   *
+   * @return The color of the vehicle.
+   */
+  public String getColor() {
+<span class="fc" id="L80">    return color;</span>
+  }
+
+  /**
+   * Retrieves the license plate number of the vehicle.
+   *
+   * @return The license plate number of the vehicle.
+   */
+  public String getLicensePlateNumber() {
+<span class="fc" id="L89">    return licensePlateNumber;</span>
+  }
+
+  /**
+   * Indicates whether some other object is &quot;equal to&quot; this one.
+   *
+   * @param o The reference object with which to compare.
+   * @return true if this object is the same as the obj argument; false otherwise.
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="pc bpc" id="L100" title="1 of 2 branches missed.">    if (this == o) {</span>
+<span class="nc" id="L101">      return true;</span>
+    }
+<span class="pc bpc" id="L103" title="2 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) {</span>
+<span class="nc" id="L104">      return false;</span>
+    }
+<span class="fc" id="L106">    VehicleInformation that = (VehicleInformation) o;</span>
+<span class="pc bpc" id="L107" title="2 of 4 branches missed.">    return Objects.equals(make, that.make) &amp;&amp; Objects.equals(model, that.model)</span>
+<span class="pc bpc" id="L108" title="2 of 4 branches missed.">        &amp;&amp; Objects.equals(yearOfVehicle, that.yearOfVehicle) &amp;&amp; Objects.equals(</span>
+<span class="pc bpc" id="L109" title="2 of 4 branches missed.">        owner, that.owner) &amp;&amp; Objects.equals(color, that.color) &amp;&amp; Objects.equals(</span>
+        licensePlateNumber, that.licensePlateNumber);
+  }
+
+  /**
+   * Returns a hash code value for the object.
+   *
+   * @return A hash code value for this object.
+   */
+  @Override
+  public int hashCode() {
+<span class="nc" id="L120">    return Objects.hash(make, model, yearOfVehicle, owner, color, licensePlateNumber);</span>
+  }
+
+  /**
+   * Returns a string representation of the object.
+   *
+   * @return A string representation of the VehicleInformation object.
+   */
+  @Override
+  public String toString() {
+<span class="nc" id="L130">    return &quot;VehicleInformation{&quot; +</span>
+        &quot;make='&quot; + make + '\'' +
+        &quot;, model='&quot; + model + '\'' +
+        &quot;, yearOfVehicle=&quot; + yearOfVehicle +
+        &quot;, owner=&quot; + owner +
+        &quot;, color='&quot; + color + '\'' +
+        &quot;, licensePlateNumber='&quot; + licensePlateNumber + '\'' +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

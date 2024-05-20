@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Driver.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">driver</a> &gt; <span class="el_source">Driver.java</span></div><h1>Driver.java</h1><pre class="source lang-java linenums">package driver;
+
+import history.DriverHistoryItem;
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Objects;
+import other.Name;
+
+/**
+ * Represents a driver.
+ */
+
+public class Driver {
+
+  private Name name;
+  private LocalDate birthdate;
+  private DriverLicense driverLicense;
+  private List&lt;DriverHistoryItem&gt; driverHistories;
+
+  /**
+   * Constructor of driver
+   *
+   * @param name            - driver's name
+   * @param birthdate       - driver's birthdate
+   * @param driverLicense   - driver's driver licnese
+   * @param driverHistories - driver's violation histories
+   */
+  public Driver(Name name, LocalDate birthdate, DriverLicense driverLicense,
+<span class="fc" id="L29">      List&lt;DriverHistoryItem&gt; driverHistories) {</span>
+<span class="fc" id="L30">    this.name = name;</span>
+<span class="fc" id="L31">    this.birthdate = birthdate;</span>
+<span class="fc" id="L32">    this.driverLicense = driverLicense;</span>
+<span class="fc" id="L33">    this.driverHistories = driverHistories;</span>
+<span class="fc" id="L34">  }</span>
+
+  /**
+   * Get driver's name
+   *
+   * @return driver's name
+   */
+  public Name getName() {
+<span class="fc" id="L42">    return name;</span>
+  }
+
+  /**
+   * Check whether last name is equals to actual last name
+   *
+   * @return check result
+   */
+  public boolean matchLastName(String lastName) {
+<span class="nc" id="L51">    return name.getLastName().equals(lastName);</span>
+  }
+
+  /**
+   * Get birthdate
+   *
+   * @return driver's birthdate
+   */
+  public LocalDate getBirthdate() {
+<span class="fc" id="L60">    return birthdate;</span>
+  }
+
+  /**
+   * Get driver's license
+   *
+   * @return driver's license
+   */
+  public DriverLicense getDriverLicense() {
+<span class="fc" id="L69">    return driverLicense;</span>
+  }
+
+  /**
+   * Get driver's violation histories
+   *
+   * @return driver's violation histories
+   */
+  public List&lt;DriverHistoryItem&gt; getDriverHistories() {
+<span class="fc" id="L78">    return driverHistories;</span>
+  }
+
+  /**
+   * Returns a string representation of the object. In general, the {@code toString} method returns
+   * a string that &quot;textually represents&quot; this object. The result should be a concise but
+   * informative representation that is easy for a person to read.
+   *
+   * @return a string representation of the object.
+   */
+  @Override
+  public String toString() {
+<span class="nc" id="L90">    return &quot;Driver{&quot; +</span>
+        &quot;name=&quot; + name +
+        &quot;, birthdate=&quot; + birthdate +
+        &quot;, driverLicense=&quot; + driverLicense +
+        &quot;, driverHistories=&quot; + driverHistories +
+        '}';
+  }
+
+  /**
+   * Indicates whether some other object is &quot;equal to&quot; this one.
+   *
+   * @param o the reference object with which to compare.
+   * @return {@code true} if this object is the same as the obj argument; {@code false} otherwise.
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="pc bpc" id="L106" title="1 of 2 branches missed.">    if (this == o) {</span>
+<span class="nc" id="L107">      return true;</span>
+    }
+<span class="pc bpc" id="L109" title="2 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) {</span>
+<span class="nc" id="L110">      return false;</span>
+    }
+<span class="fc" id="L112">    Driver driver = (Driver) o;</span>
+<span class="pc bpc" id="L113" title="1 of 4 branches missed.">    return Objects.equals(name, driver.name) &amp;&amp; Objects.equals(birthdate,</span>
+<span class="pc bpc" id="L114" title="1 of 2 branches missed.">        driver.birthdate) &amp;&amp; Objects.equals(driverLicense, driver.driverLicense)</span>
+<span class="pc bpc" id="L115" title="1 of 2 branches missed.">        &amp;&amp; Objects.equals(driverHistories, driver.driverHistories);</span>
+  }
+
+  /**
+   * Returns a hash code value for the object. This method is supported for the benefit of hash
+   * tables such as those provided by {@link java.util.HashMap}.
+   *
+   * @return a hash code value for this object.
+   */
+  @Override
+  public int hashCode() {
+<span class="fc" id="L126">    return Objects.hash(name, birthdate, driverLicense, driverHistories);</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

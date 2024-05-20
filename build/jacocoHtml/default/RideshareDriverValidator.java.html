@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RideShareDriverValidator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">RideShareDriverValidator.java</span></div><h1>RideShareDriverValidator.java</h1><pre class="source lang-java linenums">import static java.lang.System.exit;
+
+import application.Application;
+import application.RegistrationRecordItem;
+import io.Parser;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import pool.PoolManager;
+import validator.RegistrationValidator;
+import view.View;
+
+/**
+ * The main class for RideShareDriverValidator application. This class serves as the entry point for
+ * the RideShareDriverValidator application, providing methods to initialize the application, handle
+ * user input, and manage driver registration records.
+ */
+<span class="nc" id="L18">public class RideShareDriverValidator {</span>
+
+  /**
+   * List of registration record items.
+   */
+<span class="nc" id="L23">  private static List&lt;RegistrationRecordItem&gt; listOfRecords = new ArrayList&lt;&gt;();</span>
+
+  /**
+   * The parser for parsing application data.
+   */
+<span class="nc" id="L28">  private static Parser parser = new Parser(); //</span>
+
+  /**
+   * The registration validator for validating driver registration applications.
+   */
+<span class="nc" id="L33">  private static RegistrationValidator registrationValidator = new RegistrationValidator();</span>
+
+  /**
+   * The pool manager for managing driver registration records.
+   */
+  private static PoolManager poolManager;
+
+  /**
+   * The main method of the application. Initializes the validator and enters a loop to handle user
+   * input until the user chooses to end the program.
+   *
+   * @param args The command-line arguments (not used).
+   */
+  public static void main(String[] args) {
+<span class="nc" id="L47">    initializeValidator();</span>
+    int userChoice;
+    do {
+<span class="nc" id="L50">      userChoice = View.getUserChoice();</span>
+
+<span class="nc bnc" id="L52" title="All 2 branches missed.">      if (userChoice == 1) {</span>
+<span class="nc" id="L53">        Application application = getInputJsonAndParseApplication();</span>
+<span class="nc" id="L54">        handleAddValidApplication(application);</span>
+<span class="nc bnc" id="L55" title="All 2 branches missed.">      } else if (userChoice == 2) {</span>
+<span class="nc" id="L56">        String lastName = View.getLastNameToSearch();</span>
+<span class="nc" id="L57">        handleProvideDriverInformation(lastName);</span>
+<span class="nc" id="L58">      } else {</span>
+<span class="nc" id="L59">        handleEndProgram(userChoice);</span>
+      }
+<span class="nc" id="L61">    } while (true);</span>
+  }
+
+  /**
+   * Initializes the validator components.
+   */
+  public static void initializeValidator() {
+<span class="nc" id="L68">    poolManager = new PoolManager(listOfRecords);</span>
+<span class="nc" id="L69">    parser = new Parser();</span>
+<span class="nc" id="L70">    registrationValidator = new RegistrationValidator();</span>
+<span class="nc" id="L71">  }</span>
+
+  /**
+   * Reads input JSON file and parses the application data.
+   *
+   * @return The parsed application.
+   */
+  public static Application getInputJsonAndParseApplication() {
+<span class="nc" id="L79">    String filePath = View.getInputFilePath();</span>
+    try {
+<span class="nc" id="L81">      Application application = parser.parseApplicationFromFile(filePath);</span>
+<span class="nc" id="L82">      return application;</span>
+<span class="nc" id="L83">    } catch (IOException e) {</span>
+<span class="nc" id="L84">      e.printStackTrace();</span>
+<span class="nc" id="L85">      return null;</span>
+    }
+  }
+
+  /**
+   * Handles the addition of a valid driver registration application.
+   *
+   * @param application The driver registration application to add.
+   */
+  public static void handleAddValidApplication(Application application) {
+<span class="nc bnc" id="L95" title="All 2 branches missed.">    if (registrationValidator.validate(application)) {</span>
+<span class="nc bnc" id="L96" title="All 2 branches missed.">      if (poolManager.addRegistrationRecord(application)) {</span>
+<span class="nc" id="L97">        System.out.println(&quot;Successfully added registration record\n&quot;);</span>
+      } else {
+<span class="nc" id="L99">        System.out.println(&quot;Record exists, Failed to add registration record\n&quot;);</span>
+      }
+
+    } else {
+<span class="nc" id="L103">      System.out.println(&quot;Application is not valid, &quot;</span>
+          + &quot;it can not be registered! Your application is rejected!\n&quot; +
+          &quot;You can try again and enter another one application.\n&quot;);
+    }
+<span class="nc" id="L107">  }</span>
+
+  /**
+   * Handles the retrieval of driver information based on last name.
+   *
+   * @param lastName The last name of the driver to search for.
+   */
+  public static void handleProvideDriverInformation(String lastName) {
+<span class="nc" id="L115">    System.out.println(poolManager.provideDriverInfo(lastName));</span>
+<span class="nc" id="L116">  }</span>
+
+  /**
+   * Handles the termination of the program.
+   *
+   * @param userChoice The choice made by the user to end the program.
+   */
+  public static void handleEndProgram(int userChoice) {
+<span class="nc" id="L124">    System.out.println(&quot;You entered &quot; + userChoice + &quot;. Exiting the system!&quot;);</span>
+<span class="nc" id="L125">    exit(0);</span>
+<span class="nc" id="L126">  }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

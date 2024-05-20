@@ -1,0 +1,80 @@
+{
+  "driver": {
+    "name": {
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    "birthdate": "1990-01-01",
+    "driverLicense": {
+      "licenseUniqueNumber": 11111,
+      "name": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "address": "123 Main St",
+      "birthdate": "1990-01-01",
+      "country": "US",
+      "stateOfInsurance": "NY",
+      "issuanceDate": "2022-01-01",
+      "expirationDate": "2025-01-01"
+    },
+    "driverHistories": [
+      {
+        "violationDate": "2023-01-01",
+        "violationType": "DistractedDriving"
+      },
+      {
+        "violationDate": "2022-06-01",
+        "violationType": "Speeding"
+      }
+    ]
+  },
+  "vehicle": {
+    "vehicleInformation": {
+      "make": "Toyota",
+      "model": "Camry",
+      "year": 2018,
+      "owner": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "color": "Red",
+      "licensePlateNumber": "AZ034W1"
+    },
+    "vehicleInsurance": {
+      "officialOwner": {
+        "firstName": "John",
+        "lastName": "Doe"
+      },
+      "peopleNameCoveredByInsurance": [
+        {
+          "firstName": "John",
+          "lastName": "Doe"
+        },
+        {
+          "firstName": "Steve",
+          "lastName": "Hollie"
+        }
+      ],
+      "expirationDate": "2021-12-31"
+    },
+    "vehicleHistories": [
+      {
+        "vehicleIncidentDate": "2023-03-01",
+        "vehicleIncidentType": "FenderBender",
+        "offendingDriverName": {
+          "firstName": "John",
+          "lastName": "Doe"
+        }
+      },
+      {
+        "vehicleIncidentDate": "2021-12-21",
+        "vehicleIncidentType": "FenderBender",
+        "offendingDriverName": {
+          "firstName": "Steve",
+          "lastName": "Joe"
+        }
+      }
+    ]
+  }
+}

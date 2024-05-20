@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2024-04-27T01:21:34.369">
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/RideShareDriverValidator.java">
+<violation beginline="18" endline="128" begincolumn="1" endcolumn="1" rule="NoPackage" ruleset="Code Style" class="RideShareDriverValidator" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#nopackage" priority="3">
+All classes, interfaces, enums and annotations must belong to a named package
+</violation>
+<violation beginline="33" endline="33" begincolumn="40" endcolumn="60" rule="LongVariable" ruleset="Code Style" class="RideShareDriverValidator" variable="registrationValidator" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like registrationValidator
+</violation>
+<violation beginline="46" endline="46" begincolumn="27" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" class="RideShareDriverValidator" method="main" variable="args" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="49" endline="61" begincolumn="5" endcolumn="19" rule="WhileLoopWithLiteralBoolean" ruleset="Best Practices" class="RideShareDriverValidator" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#whileloopwithliteralboolean" priority="3">
+The loop can be simplified.
+</violation>
+<violation beginline="52" endline="52" begincolumn="25" endcolumn="25" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" class="RideShareDriverValidator" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="53" endline="53" begincolumn="9" endcolumn="67" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="RideShareDriverValidator" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'application' could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="32" endcolumn="32" rule="AvoidLiteralsInIfCondition" ruleset="Error Prone" class="RideShareDriverValidator" method="main" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidliteralsinifcondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="56" endline="56" begincolumn="9" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="RideShareDriverValidator" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'lastName' could be declared final
+</violation>
+<violation beginline="79" endline="79" begincolumn="5" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="RideShareDriverValidator" method="getInputJsonAndParseApplication" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'filePath' could be declared final
+</violation>
+<violation beginline="81" endline="81" begincolumn="7" endcolumn="73" rule="LocalVariableCouldBeFinal" ruleset="Code Style" class="RideShareDriverValidator" method="getInputJsonAndParseApplication" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'application' could be declared final
+</violation>
+<violation beginline="82" endline="82" begincolumn="7" endcolumn="25" rule="OnlyOneReturn" ruleset="Code Style" class="RideShareDriverValidator" method="getInputJsonAndParseApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="82" endline="82" begincolumn="7" endcolumn="25" rule="UnnecessaryLocalBeforeReturn" ruleset="Code Style" class="RideShareDriverValidator" method="getInputJsonAndParseApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn" priority="3">
+Consider simply returning the value vs storing it in local variable 'application'
+</violation>
+<violation beginline="84" endline="84" begincolumn="7" endcolumn="25" rule="AvoidPrintStackTrace" ruleset="Best Practices" class="RideShareDriverValidator" method="getInputJsonAndParseApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="94" endline="94" begincolumn="48" endcolumn="70" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" class="RideShareDriverValidator" method="handleAddValidApplication" variable="application" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'application' is not assigned and could be declared final
+</violation>
+<violation beginline="97" endline="97" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" class="RideShareDriverValidator" method="handleAddValidApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="99" endline="99" begincolumn="9" endcolumn="26" rule="SystemPrintln" ruleset="Best Practices" class="RideShareDriverValidator" method="handleAddValidApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="103" endline="103" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" class="RideShareDriverValidator" method="handleAddValidApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="114" endline="114" begincolumn="53" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" class="RideShareDriverValidator" method="handleProvideDriverInformation" variable="lastName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'lastName' is not assigned and could be declared final
+</violation>
+<violation beginline="115" endline="115" begincolumn="5" endcolumn="22" rule="SystemPrintln" ruleset="Best Practices" class="RideShareDriverValidator" method="handleProvideDriverInformation" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="123" endline="123" begincolumn="39" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" class="RideShareDriverValidator" method="handleEndProgram" variable="userChoice" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'userChoice' is not assigned and could be declared final
+</violation>
+<violation beginline="124" endline="124" begincolumn="5" endcolumn="22" rule="SystemPrintln" ruleset="Best Practices" class="RideShareDriverValidator" method="handleEndProgram" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/application/Application.java">
+<violation beginline="22" endline="22" begincolumn="22" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="application" class="Application" method="Application" variable="driver" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'driver' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="37" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="application" class="Application" method="Application" variable="vehicle" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicle' is not assigned and could be declared final
+</violation>
+<violation beginline="53" endline="53" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="application" class="Application" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="53" endline="53" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="application" class="Application" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="application" class="Application" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="58" endline="58" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="application" class="Application" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="60" endline="60" begincolumn="5" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="application" class="Application" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'that' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/application/RegistrationRecordItem.java">
+<violation beginline="22" endline="22" begincolumn="33" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="application" class="RegistrationRecordItem" method="RegistrationRecordItem" variable="driver" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'driver' is not assigned and could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="48" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="application" class="RegistrationRecordItem" method="RegistrationRecordItem" variable="vehicle" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicle' is not assigned and could be declared final
+</violation>
+<violation beginline="52" endline="52" begincolumn="38" endcolumn="60" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="application" class="RegistrationRecordItem" method="isSameAsApplication" variable="application" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'application' is not assigned and could be declared final
+</violation>
+<violation beginline="64" endline="64" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="application" class="RegistrationRecordItem" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="64" endline="64" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="application" class="RegistrationRecordItem" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="66" endline="66" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="application" class="RegistrationRecordItem" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="69" endline="69" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="application" class="RegistrationRecordItem" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="71" endline="71" begincolumn="5" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="application" class="RegistrationRecordItem" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'that' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/driver/Driver.java">
+<violation beginline="28" endline="28" begincolumn="28" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="Driver" method="Driver" variable="birthdate" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'birthdate' is not assigned and could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="49" endcolumn="75" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="Driver" method="Driver" variable="driverLicense" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'driverLicense' is not assigned and could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="17" endcolumn="25" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="Driver" method="Driver" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="7" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="Driver" method="Driver" variable="driverHistories" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'driverHistories' is not assigned and could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="32" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="Driver" method="matchLastName" variable="lastName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'lastName' is not assigned and could be declared final
+</violation>
+<violation beginline="105" endline="105" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="driver" class="Driver" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="105" endline="105" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="Driver" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="107" endline="107" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="driver" class="Driver" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="110" endline="110" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="driver" class="Driver" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="112" endline="112" begincolumn="5" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="driver" class="Driver" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driver' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/driver/DriverLicense.java">
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="22" rule="UnnecessaryImport" ruleset="Code Style" package="driver" class="DriverLicense" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.util.Date'
+</violation>
+<violation beginline="4" endline="4" begincolumn="1" endcolumn="22" rule="UnusedImports" ruleset="Best Practices" package="driver" class="DriverLicense" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'java.util.Date'
+</violation>
+<violation beginline="13" endline="13" begincolumn="19" endcolumn="37" rule="LongVariable" ruleset="Code Style" package="driver" class="DriverLicense" variable="licenseUniqueNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like licenseUniqueNumber
+</violation>
+<violation beginline="36" endline="36" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="driver" class="DriverLicense" method="DriverLicense" variable="licenseUniqueNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like licenseUniqueNumber
+</violation>
+<violation beginline="36" endline="36" begincolumn="64" endcolumn="77" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="DriverLicense" variable="address" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'address' is not assigned and could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="80" endcolumn="98" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="DriverLicense" variable="birthdate" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'birthdate' is not assigned and could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="24" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="DriverLicense" variable="licenseUniqueNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'licenseUniqueNumber' is not assigned and could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="53" endcolumn="61" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="DriverLicense" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="7" endcolumn="20" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="DriverLicense" variable="country" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'country' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="72" endcolumn="95" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="DriverLicense" variable="expirationDate" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'expirationDate' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="48" endcolumn="69" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="DriverLicense" variable="issuanceDate" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'issuanceDate' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="23" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="DriverLicense" variable="stateOfInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'stateOfInsurance' is not assigned and could be declared final
+</violation>
+<violation beginline="127" endline="127" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="driver" class="DriverLicense" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="127" endline="127" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="129" endline="129" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="driver" class="DriverLicense" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="132" endline="132" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="driver" class="DriverLicense" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="134" endline="134" begincolumn="5" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="driver" class="DriverLicense" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'that' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/history/CrashType.java">
+<violation beginline="11" endline="11" begincolumn="3" endcolumn="14" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="CrashType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'FenderBender' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="13" endline="13" begincolumn="3" endcolumn="28" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="CrashType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'CrashWithoutBodilyInjuries' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="15" endline="15" begincolumn="3" endcolumn="25" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="CrashType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'CrashWithBodilyInjuries' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="37" endline="37" begincolumn="38" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="CrashType" method="belongToEnum" variable="enumString" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'enumString' is not assigned and could be declared final
+</violation>
+<violation beginline="38" endline="38" begincolumn="5" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="history" class="CrashType" method="belongToEnum" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'crashTypes' could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="5" endcolumn="65" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="history" class="CrashType" method="belongToEnum" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'crashTypeIterator' could be declared final
+</violation>
+<violation beginline="46" endline="46" begincolumn="9" endcolumn="20" rule="OnlyOneReturn" ruleset="Code Style" package="history" class="CrashType" method="belongToEnum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/history/DriverHistoryItem.java">
+<violation beginline="23" endline="23" begincolumn="28" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="DriverHistoryItem" method="DriverHistoryItem" variable="date" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'date' is not assigned and could be declared final
+</violation>
+<violation beginline="23" endline="23" begincolumn="44" endcolumn="70" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="DriverHistoryItem" method="DriverHistoryItem" variable="violationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'violationType' is not assigned and could be declared final
+</violation>
+<violation beginline="53" endline="53" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="history" class="DriverHistoryItem" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="53" endline="53" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="DriverHistoryItem" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="history" class="DriverHistoryItem" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="58" endline="58" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="history" class="DriverHistoryItem" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="60" endline="60" begincolumn="5" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="history" class="DriverHistoryItem" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'that' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/history/HistoryItem.java">
+<violation beginline="8" endline="32" begincolumn="17" endcolumn="1" rule="AbstractNaming" ruleset="Code Style" package="history" class="HistoryItem" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#abstractnaming" priority="3">
+Abstract classes should be named AbstractXXX
+</violation>
+<violation beginline="8" endline="32" begincolumn="17" endcolumn="1" rule="AbstractClassWithoutAbstractMethod" ruleset="Best Practices" package="history" class="HistoryItem" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#abstractclasswithoutabstractmethod" priority="3">
+This abstract class does not have any abstract methods
+</violation>
+<violation beginline="13" endline="13" begincolumn="3" endcolumn="17" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="history" class="HistoryItem" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the date field if you want a default access modifier
+</violation>
+<violation beginline="13" endline="13" begincolumn="3" endcolumn="17" rule="DefaultPackage" ruleset="Code Style" package="history" class="HistoryItem" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="20" endline="20" begincolumn="22" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="HistoryItem" method="HistoryItem" variable="date" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'date' is not assigned and could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/history/VehicleHistoryItem.java">
+<violation beginline="12" endline="12" begincolumn="32" endcolumn="50" rule="LongVariable" ruleset="Code Style" package="history" class="VehicleHistoryItem" variable="vehicleIncidentType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleIncidentType
+</violation>
+<violation beginline="13" endline="13" begincolumn="16" endcolumn="34" rule="LongVariable" ruleset="Code Style" package="history" class="VehicleHistoryItem" variable="offendingDriverName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like offendingDriverName
+</violation>
+<violation beginline="23" endline="23" begincolumn="66" endcolumn="84" rule="LongVariable" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="VehicleHistoryItem" variable="vehicleIncidentType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleIncidentType
+</violation>
+<violation beginline="23" endline="23" begincolumn="29" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="VehicleHistoryItem" variable="date" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'date' is not assigned and could be declared final
+</violation>
+<violation beginline="23" endline="23" begincolumn="45" endcolumn="84" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="VehicleHistoryItem" variable="vehicleIncidentType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicleIncidentType' is not assigned and could be declared final
+</violation>
+<violation beginline="24" endline="24" begincolumn="12" endcolumn="30" rule="LongVariable" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="VehicleHistoryItem" variable="offendingDriverName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like offendingDriverName
+</violation>
+<violation beginline="24" endline="24" begincolumn="7" endcolumn="30" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="VehicleHistoryItem" variable="offendingDriverName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'offendingDriverName' is not assigned and could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="55" endline="55" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="57" endline="57" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="60" endline="60" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="62" endline="62" begincolumn="5" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="history" class="VehicleHistoryItem" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'that' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/history/ViolationType.java">
+<violation beginline="9" endline="9" begincolumn="3" endcolumn="19" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="ViolationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'DistractedDriving' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="10" endline="10" begincolumn="3" endcolumn="17" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="ViolationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'RecklessDriving' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="11" endline="11" begincolumn="3" endcolumn="10" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="ViolationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'Speeding' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="12" endline="12" begincolumn="3" endcolumn="23" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="ViolationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'DrivingUnderInfluence' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="13" endline="13" begincolumn="3" endcolumn="30" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="ViolationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'FailureToRespectTrafficSigns' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="14" endline="14" begincolumn="3" endcolumn="39" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="ViolationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'DrivingWithoutValidLicenseOrInsurance' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="17" endline="17" begincolumn="3" endcolumn="18" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="ViolationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'ParkingViolation' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="18" endline="18" begincolumn="3" endcolumn="17" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="ViolationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'PaperworkIssues' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="19" endline="19" begincolumn="3" endcolumn="21" rule="FieldNamingConventions" ruleset="Code Style" package="history" class="ViolationType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The enum constant name 'ProblemsWithVehicle' doesn't match '[A-Z][A-Z_0-9]*'
+</violation>
+<violation beginline="47" endline="47" begincolumn="38" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="history" class="ViolationType" method="belongToEnum" variable="enumString" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'enumString' is not assigned and could be declared final
+</violation>
+<violation beginline="48" endline="48" begincolumn="10" endcolumn="32" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="history" class="ViolationType" method="belongToEnum" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'crashType' could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="9" endcolumn="20" rule="OnlyOneReturn" ruleset="Code Style" package="history" class="ViolationType" method="belongToEnum" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/io/Parser.java">
+<violation beginline="30" endline="264" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="io" class="Parser" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="39" endline="39" begincolumn="47" endcolumn="61" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplicationFromFile" variable="filePath" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'filePath' is not assigned and could be declared final
+</violation>
+<violation beginline="40" endline="40" begincolumn="5" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplicationFromFile" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'jsonFile' could be declared final
+</violation>
+<violation beginline="41" endline="41" begincolumn="21" endcolumn="23" rule="CloseResource" ruleset="Error Prone" package="io" class="Parser" method="parseApplicationFromFile" variable="fis" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this FileInputStream object are closed after use
+</violation>
+<violation beginline="41" endline="41" begincolumn="5" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplicationFromFile" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'fis' could be declared final
+</violation>
+<violation beginline="42" endline="42" begincolumn="20" endcolumn="21" rule="ShortVariable" ruleset="Code Style" package="io" class="Parser" method="parseApplicationFromFile" variable="br" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like br
+</violation>
+<violation beginline="42" endline="42" begincolumn="20" endcolumn="21" rule="CloseResource" ruleset="Error Prone" package="io" class="Parser" method="parseApplicationFromFile" variable="br" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this FileInputStream object are closed after use
+</violation>
+<violation beginline="42" endline="42" begincolumn="5" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplicationFromFile" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'br' could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="5" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplicationFromFile" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'jsonContent' could be declared final
+</violation>
+<violation beginline="47" endline="47" begincolumn="12" endcolumn="41" rule="AssignmentInOperand" ruleset="Error Prone" package="io" class="Parser" method="parseApplicationFromFile" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#assignmentinoperand" priority="3">
+Avoid assignments in operands
+</violation>
+<violation beginline="47" endline="55" begincolumn="12" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="io" class="Parser" method="parseApplicationFromFile" variable="line" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'line' (lines '47'-'55').
+</violation>
+<violation beginline="63" endline="63" begincolumn="39" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplication" variable="json" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'json' is not assigned and could be declared final
+</violation>
+<violation beginline="65" endline="65" begincolumn="7" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplication" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'objectMapper' could be declared final
+</violation>
+<violation beginline="66" endline="66" begincolumn="7" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplication" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'rootNode' could be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="7" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplication" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driverNode' could be declared final
+</violation>
+<violation beginline="70" endline="70" begincolumn="7" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplication" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driver' could be declared final
+</violation>
+<violation beginline="73" endline="73" begincolumn="7" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplication" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleNode' could be declared final
+</violation>
+<violation beginline="74" endline="74" begincolumn="7" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseApplication" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicle' could be declared final
+</violation>
+<violation beginline="77" endline="77" begincolumn="7" endcolumn="46" rule="OnlyOneReturn" ruleset="Code Style" package="io" class="Parser" method="parseApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="79" endline="79" begincolumn="7" endcolumn="25" rule="AvoidPrintStackTrace" ruleset="Best Practices" package="io" class="Parser" method="parseApplication" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
+Avoid printStackTrace(); use a logger call instead.
+</violation>
+<violation beginline="90" endline="90" begincolumn="30" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriver" variable="driverNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'driverNode' is not assigned and could be declared final
+</violation>
+<violation beginline="91" endline="91" begincolumn="5" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriver" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'nameNode' could be declared final
+</violation>
+<violation beginline="92" endline="92" begincolumn="5" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriver" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'firstName' could be declared final
+</violation>
+<violation beginline="92" endline="92" begincolumn="37" endcolumn="47" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="io" class="Parser" method="parseDriver" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "firstName" appears 6 times in this file; the first occurrence is on line 92
+</violation>
+<violation beginline="93" endline="93" begincolumn="5" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriver" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'lastName' could be declared final
+</violation>
+<violation beginline="93" endline="93" begincolumn="36" endcolumn="45" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="io" class="Parser" method="parseDriver" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal "lastName" appears 6 times in this file; the first occurrence is on line 93
+</violation>
+<violation beginline="94" endline="94" begincolumn="5" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriver" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'name' could be declared final
+</violation>
+<violation beginline="96" endline="96" begincolumn="5" endcolumn="79" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriver" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'birthdate' could be declared final
+</violation>
+<violation beginline="98" endline="98" begincolumn="5" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriver" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'licenseNode' could be declared final
+</violation>
+<violation beginline="99" endline="99" begincolumn="5" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriver" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driverLicense' could be declared final
+</violation>
+<violation beginline="101" endline="105" begincolumn="7" endcolumn="59" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="io" class="Parser" method="parseDriver" variable="driverHistories" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'driverHistories' (lines '101'-'105').
+</violation>
+<violation beginline="103" endline="103" begincolumn="5" endcolumn="62" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriver" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'historiesNode' could be declared final
+</violation>
+<violation beginline="117" endline="117" begincolumn="38" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="licenseNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'licenseNode' is not assigned and could be declared final
+</violation>
+<violation beginline="118" endline="118" begincolumn="13" endcolumn="31" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="licenseUniqueNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like licenseUniqueNumber
+</violation>
+<violation beginline="118" endline="118" begincolumn="5" endcolumn="80" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'licenseUniqueNumber' could be declared final
+</violation>
+<violation beginline="120" endline="120" begincolumn="5" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'nameNode' could be declared final
+</violation>
+<violation beginline="121" endline="121" begincolumn="5" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'firstName' could be declared final
+</violation>
+<violation beginline="122" endline="122" begincolumn="5" endcolumn="55" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'lastName' could be declared final
+</violation>
+<violation beginline="123" endline="123" begincolumn="5" endcolumn="45" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'name' could be declared final
+</violation>
+<violation beginline="125" endline="125" begincolumn="5" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'address' could be declared final
+</violation>
+<violation beginline="126" endline="126" begincolumn="5" endcolumn="80" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'birthdate' could be declared final
+</violation>
+<violation beginline="127" endline="127" begincolumn="5" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'country' could be declared final
+</violation>
+<violation beginline="128" endline="128" begincolumn="5" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'stateOfInsurance' could be declared final
+</violation>
+<violation beginline="129" endline="129" begincolumn="5" endcolumn="86" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'issuanceDate' could be declared final
+</violation>
+<violation beginline="130" endline="130" begincolumn="5" endcolumn="90" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expirationDate' could be declared final
+</violation>
+<violation beginline="142" endline="142" begincolumn="56" endcolumn="77" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriverHistories" variable="historiesNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'historiesNode' is not assigned and could be declared final
+</violation>
+<violation beginline="143" endline="143" begincolumn="5" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriverHistories" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driverHistories' could be declared final
+</violation>
+<violation beginline="144" endline="144" begincolumn="10" endcolumn="29" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriverHistories" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'historyNode' could be declared final
+</violation>
+<violation beginline="145" endline="145" begincolumn="14" endcolumn="32" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseDriverHistories" variable="violationDateString" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like violationDateString
+</violation>
+<violation beginline="145" endline="145" begincolumn="7" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriverHistories" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'violationDateString' could be declared final
+</violation>
+<violation beginline="146" endline="146" begincolumn="7" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriverHistories" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'violationDate' could be declared final
+</violation>
+<violation beginline="148" endline="148" begincolumn="14" endcolumn="32" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseDriverHistories" variable="violationTypeString" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like violationTypeString
+</violation>
+<violation beginline="148" endline="148" begincolumn="7" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriverHistories" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'violationTypeString' could be declared final
+</violation>
+<violation beginline="149" endline="149" begincolumn="7" endcolumn="78" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseDriverHistories" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'violationType' could be declared final
+</violation>
+<violation beginline="161" endline="161" begincolumn="32" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="vehicleNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicleNode' is not assigned and could be declared final
+</violation>
+<violation beginline="162" endline="162" begincolumn="14" endcolumn="35" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="vehicleInformationNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleInformationNode
+</violation>
+<violation beginline="162" endline="162" begincolumn="5" endcolumn="75" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleInformationNode' could be declared final
+</violation>
+<violation beginline="163" endline="163" begincolumn="24" endcolumn="41" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="vehicleInformation" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleInformation
+</violation>
+<violation beginline="163" endline="163" begincolumn="5" endcolumn="91" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleInformation' could be declared final
+</violation>
+<violation beginline="165" endline="165" begincolumn="14" endcolumn="33" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="vehicleInsuranceNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleInsuranceNode
+</violation>
+<violation beginline="165" endline="165" begincolumn="5" endcolumn="71" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleInsuranceNode' could be declared final
+</violation>
+<violation beginline="166" endline="166" begincolumn="5" endcolumn="83" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleInsurance' could be declared final
+</violation>
+<violation beginline="168" endline="172" begincolumn="7" endcolumn="66" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="io" class="Parser" method="parseVehicle" variable="vehicleHistories" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'vehicleHistories' (lines '168'-'172').
+</violation>
+<violation beginline="170" endline="170" begincolumn="14" endcolumn="33" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="vehicleHistoriesNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleHistoriesNode
+</violation>
+<violation beginline="170" endline="170" begincolumn="5" endcolumn="71" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicle" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleHistoriesNode' could be declared final
+</violation>
+<violation beginline="184" endline="184" begincolumn="63" endcolumn="84" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="vehicleInformationNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleInformationNode
+</violation>
+<violation beginline="184" endline="184" begincolumn="54" endcolumn="84" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="vehicleInformationNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicleInformationNode' is not assigned and could be declared final
+</violation>
+<violation beginline="185" endline="185" begincolumn="5" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'make' could be declared final
+</violation>
+<violation beginline="186" endline="186" begincolumn="5" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'model' could be declared final
+</violation>
+<violation beginline="187" endline="187" begincolumn="5" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'year' could be declared final
+</violation>
+<violation beginline="189" endline="189" begincolumn="5" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'ownerNode' could be declared final
+</violation>
+<violation beginline="190" endline="190" begincolumn="5" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'firstName' could be declared final
+</violation>
+<violation beginline="191" endline="191" begincolumn="5" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'lastName' could be declared final
+</violation>
+<violation beginline="192" endline="192" begincolumn="5" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'owner' could be declared final
+</violation>
+<violation beginline="194" endline="194" begincolumn="5" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'color' could be declared final
+</violation>
+<violation beginline="196" endline="196" begincolumn="12" endcolumn="29" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="licensePlateNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like licensePlateNumber
+</violation>
+<violation beginline="196" endline="196" begincolumn="5" endcolumn="89" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInformation" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'licensePlateNumber' could be declared final
+</violation>
+<violation beginline="207" endline="207" begincolumn="59" endcolumn="78" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="vehicleInsuranceNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleInsuranceNode
+</violation>
+<violation beginline="207" endline="207" begincolumn="50" endcolumn="78" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="vehicleInsuranceNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicleInsuranceNode' is not assigned and could be declared final
+</violation>
+<violation beginline="208" endline="208" begincolumn="5" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'officialOwnerNode' could be declared final
+</violation>
+<violation beginline="209" endline="209" begincolumn="12" endcolumn="33" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="officialOwnerFirstName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like officialOwnerFirstName
+</violation>
+<violation beginline="209" endline="209" begincolumn="5" endcolumn="79" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'officialOwnerFirstName' could be declared final
+</violation>
+<violation beginline="210" endline="210" begincolumn="12" endcolumn="32" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="officialOwnerLastName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like officialOwnerLastName
+</violation>
+<violation beginline="210" endline="210" begincolumn="5" endcolumn="77" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'officialOwnerLastName' could be declared final
+</violation>
+<violation beginline="211" endline="211" begincolumn="5" endcolumn="80" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'officialOwner' could be declared final
+</violation>
+<violation beginline="213" endline="213" begincolumn="16" endcolumn="39" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="peopleCoveredByInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like peopleCoveredByInsurance
+</violation>
+<violation beginline="213" endline="213" begincolumn="5" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'peopleCoveredByInsurance' could be declared final
+</violation>
+<violation beginline="214" endline="214" begincolumn="14" endcolumn="41" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="peopleCoveredByInsuranceNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like peopleCoveredByInsuranceNode
+</violation>
+<violation beginline="214" endline="215" begincolumn="5" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'peopleCoveredByInsuranceNode' could be declared final
+</violation>
+<violation beginline="217" endline="217" begincolumn="12" endcolumn="30" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'personNode' could be declared final
+</violation>
+<violation beginline="218" endline="218" begincolumn="9" endcolumn="63" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'firstName' could be declared final
+</violation>
+<violation beginline="219" endline="219" begincolumn="9" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'lastName' could be declared final
+</violation>
+<violation beginline="220" endline="220" begincolumn="9" endcolumn="51" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'person' could be declared final
+</violation>
+<violation beginline="225" endline="225" begincolumn="5" endcolumn="99" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expirationDate' could be declared final
+</violation>
+<violation beginline="236" endline="236" begincolumn="65" endcolumn="84" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="vehicleHistoriesNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleHistoriesNode
+</violation>
+<violation beginline="236" endline="236" begincolumn="56" endcolumn="84" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="vehicleHistoriesNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicleHistoriesNode' is not assigned and could be declared final
+</violation>
+<violation beginline="237" endline="237" begincolumn="5" endcolumn="65" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleHistories' could be declared final
+</violation>
+<violation beginline="239" endline="239" begincolumn="19" endcolumn="36" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="vehicleHistoryNode" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleHistoryNode
+</violation>
+<violation beginline="239" endline="239" begincolumn="10" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleHistoryNode' could be declared final
+</violation>
+<violation beginline="240" endline="240" begincolumn="7" endcolumn="71" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'dateNode' could be declared final
+</violation>
+<violation beginline="241" endline="241" begincolumn="7" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'date' could be declared final
+</violation>
+<violation beginline="243" endline="243" begincolumn="14" endcolumn="38" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="vehicleIncidentTypeString" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleIncidentTypeString
+</violation>
+<violation beginline="243" endline="243" begincolumn="7" endcolumn="95" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleIncidentTypeString' could be declared final
+</violation>
+<violation beginline="245" endline="245" begincolumn="28" endcolumn="46" rule="LongVariable" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="vehicleIncidentType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleIncidentType
+</violation>
+<violation beginline="245" endline="247" begincolumn="9" endcolumn="74" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="io" class="Parser" method="parseVehicleHistory" variable="vehicleIncidentType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'vehicleIncidentType' (lines '245'-'247').
+</violation>
+<violation beginline="245" endline="249" begincolumn="9" endcolumn="78" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="io" class="Parser" method="parseVehicleHistory" variable="vehicleIncidentType" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DD'-anomaly for variable 'vehicleIncidentType' (lines '245'-'249').
+</violation>
+<violation beginline="245" endline="245" begincolumn="50" endcolumn="53" rule="UnusedAssignment" ruleset="Best Practices" package="io" class="Parser" method="parseVehicleHistory" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedassignment" priority="3">
+The initializer for variable 'vehicleIncidentType' is never used (overwritten on lines 247 and 249)
+</violation>
+<violation beginline="252" endline="252" begincolumn="7" endcolumn="71" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'nameNode' could be declared final
+</violation>
+<violation beginline="253" endline="253" begincolumn="7" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'firstName' could be declared final
+</violation>
+<violation beginline="254" endline="254" begincolumn="7" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'lastName' could be declared final
+</violation>
+<violation beginline="255" endline="255" begincolumn="7" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="io" class="Parser" method="parseVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'name' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/other/Name.java">
+<violation beginline="8" endline="83" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Code Style" package="other" class="Name" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+Avoid short class names like Name
+</violation>
+<violation beginline="19" endline="19" begincolumn="15" endcolumn="30" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="other" class="Name" method="Name" variable="firstName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'firstName' is not assigned and could be declared final
+</violation>
+<violation beginline="19" endline="19" begincolumn="33" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="other" class="Name" method="Name" variable="lastName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'lastName' is not assigned and could be declared final
+</violation>
+<violation beginline="49" endline="49" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="other" class="Name" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="49" endline="49" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="other" class="Name" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="other" class="Name" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="54" endline="54" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="other" class="Name" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="56" endline="56" begincolumn="5" endcolumn="29" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="other" class="Name" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'diverName' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/pool/PoolManager.java">
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="29" rule="UnnecessaryImport" ruleset="Code Style" package="pool" class="PoolManager" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'history.ViolationType'
+</violation>
+<violation beginline="7" endline="7" begincolumn="1" endcolumn="29" rule="UnusedImports" ruleset="Best Practices" package="pool" class="PoolManager" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'history.ViolationType'
+</violation>
+<violation beginline="12" endline="12" begincolumn="1" endcolumn="25" rule="UnnecessaryImport" ruleset="Code Style" package="pool" class="PoolManager" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.util.Objects'
+</violation>
+<violation beginline="12" endline="12" begincolumn="1" endcolumn="25" rule="UnusedImports" ruleset="Best Practices" package="pool" class="PoolManager" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'java.util.Objects'
+</violation>
+<violation beginline="30" endline="30" begincolumn="22" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="PoolManager" variable="registeredRecords" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'registeredRecords' is not assigned and could be declared final
+</violation>
+<violation beginline="49" endline="49" begincolumn="32" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="recordExists" variable="possibleRecord" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'possibleRecord' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="pool" class="PoolManager" method="recordExists" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="54" endline="54" begincolumn="10" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="recordExists" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'record' could be declared final
+</violation>
+<violation beginline="56" endline="56" begincolumn="9" endcolumn="20" rule="OnlyOneReturn" ruleset="Code Style" package="pool" class="PoolManager" method="recordExists" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="68" endline="68" begincolumn="40" endcolumn="65" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="addRegistrationRecord" variable="possibleRecord" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'possibleRecord' is not assigned and could be declared final
+</violation>
+<violation beginline="70" endline="70" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="pool" class="PoolManager" method="addRegistrationRecord" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="79" endline="79" begincolumn="35" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="lastName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'lastName' is not assigned and could be declared final
+</violation>
+<violation beginline="80" endline="80" begincolumn="5" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'infos' could be declared final
+</violation>
+<violation beginline="82" endline="82" begincolumn="34" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="recordsFilterByLastName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like recordsFilterByLastName
+</violation>
+<violation beginline="82" endline="84" begincolumn="5" endcolumn="37" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'recordsFilterByLastName' could be declared final
+</violation>
+<violation beginline="90" endline="90" begincolumn="7" endcolumn="38" rule="OnlyOneReturn" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="94" endline="94" begincolumn="36" endcolumn="55" rule="LongVariable" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="driverVehicleHashMap" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like driverVehicleHashMap
+</violation>
+<violation beginline="94" endline="94" begincolumn="5" endcolumn="73" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driverVehicleHashMap' could be declared final
+</violation>
+<violation beginline="95" endline="95" begincolumn="10" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'record' could be declared final
+</violation>
+<violation beginline="96" endline="96" begincolumn="7" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driver' could be declared final
+</violation>
+<violation beginline="104" endline="104" begincolumn="5" endcolumn="70" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'drivers' could be declared final
+</violation>
+<violation beginline="107" endline="107" begincolumn="5" endcolumn="44" rule="PrematureDeclaration" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#prematuredeclaration" priority="3">
+Avoid declaring a variable if it is unreferenced before a possible exit point.
+</violation>
+<violation beginline="107" endline="107" begincolumn="19" endcolumn="22" rule="UnusedLocalVariable" ruleset="Best Practices" package="pool" class="PoolManager" method="provideDriverInfo" variable="info" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'info'.
+</violation>
+<violation beginline="107" endline="113" begincolumn="19" endcolumn="44" rule="DataflowAnomalyAnalysis" ruleset="Error Prone" package="pool" class="PoolManager" method="provideDriverInfo" variable="info" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#dataflowanomalyanalysis" priority="5">
+Found 'DU'-anomaly for variable 'info' (lines '107'-'113').
+</violation>
+<violation beginline="107" endline="107" begincolumn="5" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'info' could be declared final
+</violation>
+<violation beginline="108" endline="108" begincolumn="10" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="provideDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driver' could be declared final
+</violation>
+<violation beginline="121" endline="121" begincolumn="43" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="extractDriverInfo" variable="driver" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'driver' is not assigned and could be declared final
+</violation>
+<violation beginline="121" endline="121" begincolumn="58" endcolumn="79" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="extractDriverInfo" variable="vehicles" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicles' is not assigned and could be declared final
+</violation>
+<violation beginline="122" endline="122" begincolumn="5" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="extractDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'info' could be declared final
+</violation>
+<violation beginline="129" endline="129" begincolumn="10" endcolumn="24" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="extractDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicle' could be declared final
+</violation>
+<violation beginline="139" endline="139" begincolumn="5" endcolumn="73" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="extractDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driverHistories' could be declared final
+</violation>
+<violation beginline="142" endline="142" begincolumn="12" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="pool" class="PoolManager" method="extractDriverInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driverHistoryItem' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/validator/RegistrationValidator.java">
+<violation beginline="21" endline="211" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="validator" class="RegistrationValidator" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
+Each class should declare at least one constructor
+</violation>
+<violation beginline="26" endline="26" begincolumn="25" endcolumn="31" rule="FieldNamingConventions" ruleset="Code Style" package="validator" class="RegistrationValidator" variable="MIN_AGE" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'MIN_AGE' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="27" endline="27" begincolumn="25" endcolumn="32" rule="FieldNamingConventions" ruleset="Code Style" package="validator" class="RegistrationValidator" variable="MAX_YEAR" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'MAX_YEAR' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="28" endline="28" begincolumn="25" endcolumn="47" rule="LongVariable" ruleset="Code Style" package="validator" class="RegistrationValidator" variable="MIN_LICENSE_ISSUE_MONTH" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like MIN_LICENSE_ISSUE_MONTH
+</violation>
+<violation beginline="28" endline="28" begincolumn="25" endcolumn="47" rule="FieldNamingConventions" ruleset="Code Style" package="validator" class="RegistrationValidator" variable="MIN_LICENSE_ISSUE_MONTH" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'MIN_LICENSE_ISSUE_MONTH' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="33" endline="33" begincolumn="30" endcolumn="61" rule="LongVariable" ruleset="Code Style" package="validator" class="RegistrationValidator" variable="acceptedLicenseIssuanceCountries" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like acceptedLicenseIssuanceCountries
+</violation>
+<violation beginline="35" endline="35" begincolumn="37" endcolumn="52" rule="FieldNamingConventions" ruleset="Code Style" package="validator" class="RegistrationValidator" variable="MovingViolations" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'MovingViolations' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="47" endline="47" begincolumn="37" endcolumn="56" rule="LongVariable" ruleset="Code Style" package="validator" class="RegistrationValidator" variable="DisallowedViolations" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like DisallowedViolations
+</violation>
+<violation beginline="47" endline="47" begincolumn="37" endcolumn="56" rule="FieldNamingConventions" ruleset="Code Style" package="validator" class="RegistrationValidator" variable="DisallowedViolations" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'DisallowedViolations' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="57" endline="57" begincolumn="33" endcolumn="39" rule="FieldNamingConventions" ruleset="Code Style" package="validator" class="RegistrationValidator" variable="Crashes" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'Crashes' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="70" endline="70" begincolumn="27" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validate" variable="application" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'application' is not assigned and could be declared final
+</violation>
+<violation beginline="85" endline="85" begincolumn="29" endcolumn="51" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverAge" variable="application" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'application' is not assigned and could be declared final
+</violation>
+<violation beginline="85" endline="91" begincolumn="3" endcolumn="3" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverAge" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the validateDriverAge method if you want a default access modifier
+</violation>
+<violation beginline="85" endline="91" begincolumn="3" endcolumn="3" rule="DefaultPackage" ruleset="Code Style" package="validator" class="RegistrationValidator" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="86" endline="86" begincolumn="5" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverAge" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'birthdate' could be declared final
+</violation>
+<violation beginline="87" endline="87" begincolumn="5" endcolumn="43" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverAge" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'currentDate' could be declared final
+</violation>
+<violation beginline="88" endline="88" begincolumn="5" endcolumn="65" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverAge" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'ageDifference' could be declared final
+</violation>
+<violation beginline="89" endline="89" begincolumn="5" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverAge" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'age' could be declared final
+</violation>
+<violation beginline="99" endline="99" begincolumn="27" endcolumn="49" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="application" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'application' is not assigned and could be declared final
+</violation>
+<violation beginline="99" endline="137" begincolumn="3" endcolumn="3" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the validateLicense method if you want a default access modifier
+</violation>
+<violation beginline="99" endline="137" begincolumn="3" endcolumn="3" rule="DefaultPackage" ruleset="Code Style" package="validator" class="RegistrationValidator" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="100" endline="100" begincolumn="5" endcolumn="43" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driver' could be declared final
+</violation>
+<violation beginline="101" endline="101" begincolumn="5" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'license' could be declared final
+</violation>
+<violation beginline="103" endline="103" begincolumn="10" endcolumn="29" rule="LongVariable" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="prospectivDriverName" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like prospectivDriverName
+</violation>
+<violation beginline="103" endline="103" begincolumn="5" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'prospectivDriverName' could be declared final
+</violation>
+<violation beginline="104" endline="104" begincolumn="5" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driverLicenseName' could be declared final
+</violation>
+<violation beginline="106" endline="106" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="109" endline="109" begincolumn="15" endcolumn="32" rule="LongVariable" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="applicantBirthDate" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like applicantBirthDate
+</violation>
+<violation beginline="109" endline="109" begincolumn="5" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'applicantBirthDate' could be declared final
+</violation>
+<violation beginline="110" endline="110" begincolumn="15" endcolumn="36" rule="LongVariable" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="driverLicenseBirthDate" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like driverLicenseBirthDate
+</violation>
+<violation beginline="110" endline="110" begincolumn="5" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driverLicenseBirthDate' could be declared final
+</violation>
+<violation beginline="112" endline="112" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="116" endline="116" begincolumn="5" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'licenseCountry' could be declared final
+</violation>
+<violation beginline="118" endline="118" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="122" endline="122" begincolumn="15" endcolumn="33" rule="LongVariable" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="licenseIssuanceDate" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like licenseIssuanceDate
+</violation>
+<violation beginline="122" endline="122" begincolumn="5" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'licenseIssuanceDate' could be declared final
+</violation>
+<violation beginline="123" endline="123" begincolumn="5" endcolumn="76" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'issuedTime' could be declared final
+</violation>
+<violation beginline="126" endline="126" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="130" endline="130" begincolumn="15" endcolumn="35" rule="LongVariable" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="licenseExpirationDate" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like licenseExpirationDate
+</violation>
+<violation beginline="130" endline="130" begincolumn="5" endcolumn="65" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'licenseExpirationDate' could be declared final
+</violation>
+<violation beginline="131" endline="131" begincolumn="5" endcolumn="79" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expiredTime' could be declared final
+</violation>
+<violation beginline="133" endline="133" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateLicense" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="139" endline="139" begincolumn="31" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInfo" variable="application" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'application' is not assigned and could be declared final
+</violation>
+<violation beginline="139" endline="148" begincolumn="3" endcolumn="3" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInfo" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the validateVehicleInfo method if you want a default access modifier
+</violation>
+<violation beginline="139" endline="148" begincolumn="3" endcolumn="3" rule="DefaultPackage" ruleset="Code Style" package="validator" class="RegistrationValidator" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="140" endline="140" begincolumn="5" endcolumn="85" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleInfo' could be declared final
+</violation>
+<violation beginline="142" endline="142" begincolumn="5" endcolumn="53" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInfo" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleYears' could be declared final
+</violation>
+<violation beginline="144" endline="144" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInfo" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="156" endline="156" begincolumn="36" endcolumn="58" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInsurance" variable="application" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'application' is not assigned and could be declared final
+</violation>
+<violation beginline="156" endline="175" begincolumn="3" endcolumn="3" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the validateVehicleInsurance method if you want a default access modifier
+</violation>
+<violation beginline="156" endline="175" begincolumn="3" endcolumn="3" rule="DefaultPackage" ruleset="Code Style" package="validator" class="RegistrationValidator" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="157" endline="157" begincolumn="5" endcolumn="43" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driver' could be declared final
+</violation>
+<violation beginline="158" endline="158" begincolumn="5" endcolumn="86" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleInsurance' could be declared final
+</violation>
+<violation beginline="161" endline="161" begincolumn="5" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'officialOwner' could be declared final
+</violation>
+<violation beginline="163" endline="163" begincolumn="5" endcolumn="78" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'insuredDrivers' could be declared final
+</violation>
+<violation beginline="165" endline="165" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="169" endline="169" begincolumn="5" endcolumn="67" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInsurance" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'expirationDate' could be declared final
+</violation>
+<violation beginline="171" endline="171" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="177" endline="177" begincolumn="33" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverHistory" variable="application" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'application' is not assigned and could be declared final
+</violation>
+<violation beginline="177" endline="187" begincolumn="3" endcolumn="3" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverHistory" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the validateDriverHistory method if you want a default access modifier
+</violation>
+<violation beginline="177" endline="187" begincolumn="3" endcolumn="3" rule="DefaultPackage" ruleset="Code Style" package="validator" class="RegistrationValidator" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="178" endline="178" begincolumn="5" endcolumn="91" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'driverViolations' could be declared final
+</violation>
+<violation beginline="179" endline="179" begincolumn="10" endcolumn="36" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'violation' could be declared final
+</violation>
+<violation beginline="180" endline="180" begincolumn="7" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'violationType' could be declared final
+</violation>
+<violation beginline="182" endline="182" begincolumn="9" endcolumn="21" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateDriverHistory" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="195" endline="195" begincolumn="34" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleHistory" variable="application" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'application' is not assigned and could be declared final
+</violation>
+<violation beginline="195" endline="210" begincolumn="3" endcolumn="3" rule="CommentDefaultAccessModifier" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleHistory" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#commentdefaultaccessmodifier" priority="3">
+To avoid mistakes add a comment at the beginning of the validateVehicleHistory method if you want a default access modifier
+</violation>
+<violation beginline="195" endline="210" begincolumn="3" endcolumn="3" rule="DefaultPackage" ruleset="Code Style" package="validator" class="RegistrationValidator" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#defaultpackage" priority="3">
+Use explicit scoping instead of the default package private level
+</violation>
+<violation beginline="196" endline="196" begincolumn="5" endcolumn="94" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleHistories' could be declared final
+</violation>
+<violation beginline="197" endline="197" begincolumn="29" endcolumn="46" rule="LongVariable" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleHistory" variable="vehicleHistoryItem" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleHistoryItem
+</violation>
+<violation beginline="197" endline="197" begincolumn="10" endcolumn="46" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicleHistoryItem' could be declared final
+</violation>
+<violation beginline="198" endline="198" begincolumn="7" endcolumn="60" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleHistory" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'violationDate' could be declared final
+</violation>
+<violation beginline="206" endline="206" begincolumn="9" endcolumn="21" rule="OnlyOneReturn" ruleset="Code Style" package="validator" class="RegistrationValidator" method="validateVehicleHistory" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/vehicle/Vehicle.java">
+<violation beginline="12" endline="12" begincolumn="30" endcolumn="47" rule="LongVariable" ruleset="Code Style" package="vehicle" class="Vehicle" variable="vehicleInformation" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleInformation
+</violation>
+<violation beginline="25" endline="25" begincolumn="37" endcolumn="54" rule="LongVariable" ruleset="Code Style" package="vehicle" class="Vehicle" method="Vehicle" variable="vehicleInformation" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like vehicleInformation
+</violation>
+<violation beginline="25" endline="25" begincolumn="18" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="Vehicle" method="Vehicle" variable="vehicleInformation" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicleInformation' is not assigned and could be declared final
+</violation>
+<violation beginline="25" endline="25" begincolumn="57" endcolumn="89" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="Vehicle" method="Vehicle" variable="vehicleInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicleInsurance' is not assigned and could be declared final
+</violation>
+<violation beginline="26" endline="26" begincolumn="7" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="Vehicle" method="Vehicle" variable="vehicleHistories" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'vehicleHistories' is not assigned and could be declared final
+</violation>
+<violation beginline="67" endline="67" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="vehicle" class="Vehicle" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="67" endline="67" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="Vehicle" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="vehicle" class="Vehicle" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="72" endline="72" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="vehicle" class="Vehicle" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="74" endline="74" begincolumn="5" endcolumn="33" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="vehicle" class="Vehicle" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'vehicle' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/vehicle/VehicleInformation.java">
+<violation beginline="16" endline="16" begincolumn="18" endcolumn="35" rule="LongVariable" ruleset="Code Style" package="vehicle" class="VehicleInformation" variable="licensePlateNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like licensePlateNumber
+</violation>
+<violation beginline="28" endline="28" begincolumn="29" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="VehicleInformation" variable="make" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'make' is not assigned and could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="42" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="VehicleInformation" variable="model" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'model' is not assigned and could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="79" endcolumn="88" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="VehicleInformation" variable="owner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'owner' is not assigned and could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="56" endcolumn="76" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="VehicleInformation" variable="yearOfVehicle" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'yearOfVehicle' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="28" endcolumn="45" rule="LongVariable" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="VehicleInformation" variable="licensePlateNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like licensePlateNumber
+</violation>
+<violation beginline="29" endline="29" begincolumn="7" endcolumn="18" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="VehicleInformation" variable="color" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'color' is not assigned and could be declared final
+</violation>
+<violation beginline="29" endline="29" begincolumn="21" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="VehicleInformation" variable="licensePlateNumber" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'licensePlateNumber' is not assigned and could be declared final
+</violation>
+<violation beginline="99" endline="99" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="99" endline="99" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="101" endline="101" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="104" endline="104" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="106" endline="106" begincolumn="5" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInformation" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'that' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/vehicle/VehicleInsurance.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="21" rule="UnnecessaryImport" ruleset="Code Style" package="vehicle" class="VehicleInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'driver.Driver'
+</violation>
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="21" rule="UnusedImports" ruleset="Best Practices" package="vehicle" class="VehicleInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'driver.Driver'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="22" rule="UnnecessaryImport" ruleset="Code Style" package="vehicle" class="VehicleInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.util.Date'
+</violation>
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="22" rule="UnusedImports" ruleset="Best Practices" package="vehicle" class="VehicleInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'java.util.Date'
+</violation>
+<violation beginline="17" endline="17" begincolumn="22" endcolumn="45" rule="LongVariable" ruleset="Code Style" package="vehicle" class="VehicleInsurance" variable="peopleCoveredByInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like peopleCoveredByInsurance
+</violation>
+<violation beginline="27" endline="27" begincolumn="27" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInsurance" method="VehicleInsurance" variable="officialOwner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'officialOwner' is not assigned and could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="18" endcolumn="41" rule="LongVariable" ruleset="Code Style" package="vehicle" class="VehicleInsurance" method="VehicleInsurance" variable="peopleCoveredByInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#longvariable" priority="3">
+Avoid excessively long variable names like peopleCoveredByInsurance
+</violation>
+<violation beginline="28" endline="28" begincolumn="44" endcolumn="67" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInsurance" method="VehicleInsurance" variable="expirationDate" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'expirationDate' is not assigned and could be declared final
+</violation>
+<violation beginline="28" endline="28" begincolumn="7" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInsurance" method="VehicleInsurance" variable="peopleCoveredByInsurance" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'peopleCoveredByInsurance' is not assigned and could be declared final
+</violation>
+<violation beginline="68" endline="68" begincolumn="32" endcolumn="32" rule="ShortVariable" ruleset="Code Style" package="vehicle" class="VehicleInsurance" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like o
+</violation>
+<violation beginline="68" endline="68" begincolumn="25" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInsurance" method="equals" variable="o" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'o' is not assigned and could be declared final
+</violation>
+<violation beginline="70" endline="70" begincolumn="7" endcolumn="18" rule="OnlyOneReturn" ruleset="Code Style" package="vehicle" class="VehicleInsurance" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="73" endline="73" begincolumn="7" endcolumn="19" rule="OnlyOneReturn" ruleset="Code Style" package="vehicle" class="VehicleInsurance" method="equals" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#onlyonereturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="75" endline="75" begincolumn="5" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="vehicle" class="VehicleInsurance" method="equals" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'that' could be declared final
+</violation>
+</file>
+<file name="/Users/xiaolingyun/Documents/GH5004/Student_repo_Lingyun_Evenlyn_Xiao/final_project_option2/src/main/java/view/View.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="32" rule="UnnecessaryImport" ruleset="Code Style" package="view" class="View" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'java.awt.print.Printable'
+</violation>
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="32" rule="UnusedImports" ruleset="Best Practices" package="view" class="View" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Unused import 'java.awt.print.Printable'
+</violation>
+<violation beginline="10" endline="88" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Code Style" package="view" class="View" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+Avoid short class names like View
+</violation>
+<violation beginline="18" endline="18" begincolumn="13" endcolumn="19" rule="CloseResource" ruleset="Error Prone" package="view" class="View" method="getInputFilePath" variable="scanner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this InputStream object are closed after use
+</violation>
+<violation beginline="18" endline="18" begincolumn="5" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="view" class="View" method="getInputFilePath" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'scanner' could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="view" class="View" method="getInputFilePath" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="35" endline="35" begincolumn="37" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="view" class="View" method="isPathValid" variable="path" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'path' is not assigned and could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="5" endcolumn="77" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="view" class="View" method="isPathValid" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'regex' could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="5" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="view" class="View" method="isPathValid" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'matches' could be declared final
+</violation>
+<violation beginline="38" endline="42" begincolumn="5" endcolumn="5" rule="ConfusingTernary" ruleset="Code Style" package="view" class="View" method="isPathValid" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#confusingternary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="39" endline="39" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="view" class="View" method="isPathValid" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="41" endline="41" begincolumn="7" endcolumn="24" rule="SystemPrintln" ruleset="Best Practices" package="view" class="View" method="isPathValid" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="52" endline="52" begincolumn="13" endcolumn="19" rule="CloseResource" ruleset="Error Prone" package="view" class="View" method="getUserChoice" variable="scanner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this InputStream object are closed after use
+</violation>
+<violation beginline="52" endline="52" begincolumn="5" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="view" class="View" method="getUserChoice" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'scanner' could be declared final
+</violation>
+<violation beginline="53" endline="53" begincolumn="5" endcolumn="22" rule="SystemPrintln" ruleset="Best Practices" package="view" class="View" method="getUserChoice" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="54" endline="54" begincolumn="5" endcolumn="22" rule="SystemPrintln" ruleset="Best Practices" package="view" class="View" method="getUserChoice" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="58" endline="58" begincolumn="5" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="view" class="View" method="getUserChoice" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'userChoice' could be declared final
+</violation>
+<violation beginline="59" endline="59" begincolumn="5" endcolumn="22" rule="UnnecessaryLocalBeforeReturn" ruleset="Code Style" package="view" class="View" method="getUserChoice" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn" priority="3">
+Consider simply returning the value vs storing it in local variable 'userChoice'
+</violation>
+<violation beginline="68" endline="68" begincolumn="13" endcolumn="19" rule="CloseResource" ruleset="Error Prone" package="view" class="View" method="getLastNameToSearch" variable="scanner" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#closeresource" priority="3">
+Ensure that resources like this InputStream object are closed after use
+</violation>
+<violation beginline="68" endline="68" begincolumn="5" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="view" class="View" method="getLastNameToSearch" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'scanner' could be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="5" endcolumn="22" rule="SystemPrintln" ruleset="Best Practices" package="view" class="View" method="getLastNameToSearch" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#systemprintln" priority="2">
+System.out.println is used
+</violation>
+<violation beginline="70" endline="70" begincolumn="5" endcolumn="40" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="view" class="View" method="getLastNameToSearch" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'lastName' could be declared final
+</violation>
+<violation beginline="71" endline="71" begincolumn="5" endcolumn="20" rule="UnnecessaryLocalBeforeReturn" ruleset="Code Style" package="view" class="View" method="getLastNameToSearch" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarylocalbeforereturn" priority="3">
+Consider simply returning the value vs storing it in local variable 'lastName'
+</violation>
+<violation beginline="81" endline="81" begincolumn="41" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="view" class="View" variable="list" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'list' is not assigned and could be declared final
+</violation>
+<violation beginline="82" endline="82" begincolumn="5" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="view" class="View" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'listString' could be declared final
+</violation>
+<violation beginline="83" endline="83" begincolumn="10" endcolumn="15" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="view" class="View" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'item' could be declared final
+</violation>
+</file>
+</pmd>

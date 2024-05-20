@@ -1,0 +1,70 @@
+{
+  "driver": {
+    "name": {
+      "firstName": "Anne",
+      "lastName": "Smith"
+    },
+    "birthdate": "1990-01-01",
+    "driverLicense": {
+      "licenseUniqueNumber": 11111,
+      "name": {
+        "firstName": "Anne",
+        "lastName": "Smith"
+      },
+      "address": "123 Main St",
+      "birthdate": "1990-01-01",
+      "country": "US",
+      "stateOfInsurance": "NY",
+      "issuanceDate": "2022-01-01",
+      "expirationDate": "2025-01-01"
+    }
+  },
+  "vehicle": {
+    "vehicleInformation": {
+      "make": "Toyota",
+      "model": "Prius",
+      "year": 2015,
+      "owner": {
+        "firstName": "Anne",
+        "lastName": "Smith"
+      },
+      "color": "Silver",
+      "licensePlateNumber": "AZ034W1"
+    },
+    "vehicleInsurance": {
+      "officialOwner": {
+        "firstName": "Anne",
+        "lastName": "Smith"
+      },
+      "peopleNameCoveredByInsurance": [
+        {
+          "firstName": "Anne",
+          "lastName": "Smith"
+        },
+        {
+          "firstName": "Steve",
+          "lastName": "Hollie"
+        }
+      ],
+      "expirationDate": "2025-12-31"
+    },
+    "vehicleHistories": [
+      {
+        "vehicleIncidentDate": "2020-03-01",
+        "vehicleIncidentType": "FenderBender",
+        "offendingDriverName": {
+          "firstName": "Anne",
+          "lastName": "Smith"
+        }
+      },
+      {
+        "vehicleIncidentDate": "2021-12-21",
+        "vehicleIncidentType": "Speeding",
+        "offendingDriverName": {
+          "firstName": "Steve",
+          "lastName": "Joe"
+        }
+      }
+    ]
+  }
+}

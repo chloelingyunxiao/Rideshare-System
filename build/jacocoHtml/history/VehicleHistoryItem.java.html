@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>VehicleHistoryItem.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">history</a> &gt; <span class="el_source">VehicleHistoryItem.java</span></div><h1>VehicleHistoryItem.java</h1><pre class="source lang-java linenums">package history;
+
+import java.time.LocalDate;
+import java.util.Objects;
+import other.Name;
+
+/**
+ * Represents a history item for a vehicle, indicating an incident.
+ */
+public class VehicleHistoryItem extends HistoryItem {
+
+  private IVehicleIncidentType vehicleIncidentType;
+  private Name offendingDriverName;
+
+  /**
+   * Constructs a new VehicleHistoryItem with the specified date, vehicle incident type, and
+   * offending driver name.
+   *
+   * @param date                the date of the incident.
+   * @param vehicleIncidentType the type of the vehicle incident.
+   * @param offendingDriverName the name of the offending driver.
+   */
+  public VehicleHistoryItem(LocalDate date, IVehicleIncidentType vehicleIncidentType,
+      Name offendingDriverName) {
+<span class="fc" id="L25">    super(date);</span>
+<span class="fc" id="L26">    this.vehicleIncidentType = vehicleIncidentType;</span>
+<span class="fc" id="L27">    this.offendingDriverName = offendingDriverName;</span>
+<span class="fc" id="L28">  }</span>
+
+  /**
+   * Retrieves the type of vehicle incident.
+   *
+   * @return the type of vehicle incident.
+   */
+  public IVehicleIncidentType getVehicleIncidentType() {
+<span class="fc" id="L36">    return vehicleIncidentType;</span>
+  }
+
+  /**
+   * Retrieves the name of the offending driver.
+   *
+   * @return the name of the offending driver.
+   */
+  public Name getOffendingDriverName() {
+<span class="nc" id="L45">    return offendingDriverName;</span>
+  }
+
+  /**
+   * Indicates whether some other object is &quot;equal to&quot; this one.
+   *
+   * @param o the reference object with which to compare.
+   * @return {@code true} if this object is the same as the obj argument; {@code false} otherwise.
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="pc bpc" id="L56" title="1 of 2 branches missed.">    if (this == o) {</span>
+<span class="nc" id="L57">      return true;</span>
+    }
+<span class="pc bpc" id="L59" title="2 of 4 branches missed.">    if (o == null || getClass() != o.getClass()) {</span>
+<span class="nc" id="L60">      return false;</span>
+    }
+<span class="fc" id="L62">    VehicleHistoryItem that = (VehicleHistoryItem) o;</span>
+<span class="pc bpc" id="L63" title="1 of 2 branches missed.">    return Objects.equals(vehicleIncidentType, that.vehicleIncidentType)</span>
+<span class="pc bpc" id="L64" title="1 of 2 branches missed.">        &amp;&amp; Objects.equals(offendingDriverName, that.offendingDriverName);</span>
+  }
+
+  /**
+   * Returns a hash code value for the object. This method is supported for the benefit of hash
+   * tables such as those provided by {@link java.util.HashMap}.
+   *
+   * @return a hash code value for this object.
+   */
+  @Override
+  public int hashCode() {
+<span class="nc" id="L75">    return Objects.hash(vehicleIncidentType, offendingDriverName);</span>
+  }
+
+  /**
+   * Returns a string representation of the object. In general, the {@code toString} method returns
+   * a string that &quot;textually represents&quot; this object. The result should be a concise but
+   * informative representation that is easy for a person to read.
+   *
+   * @return a string representation of the object.
+   */
+  @Override
+  public String toString() {
+<span class="nc" id="L87">    return &quot;VehicleHistoryItem{&quot; +</span>
+        &quot;vehicleIncidentType=&quot; + vehicleIncidentType +
+        &quot;, offendingDriverName=&quot; + offendingDriverName +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

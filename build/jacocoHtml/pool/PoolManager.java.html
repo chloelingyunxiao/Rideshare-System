@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PoolManager.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">pool</a> &gt; <span class="el_source">PoolManager.java</span></div><h1>PoolManager.java</h1><pre class="source lang-java linenums">package pool;
+
+import application.Application;
+import application.RegistrationRecordItem;
+import driver.Driver;
+import history.DriverHistoryItem;
+import history.ViolationType;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+import vehicle.Vehicle;
+import view.View;
+
+/**
+ * Manages the pool of registered drivers and their registration records.
+ */
+public class PoolManager {
+
+  /**
+   * List of registration record items.
+   */
+  private List&lt;RegistrationRecordItem&gt; registeredRecords;
+
+  /**
+   * Constructor of PoolManager.
+   */
+<span class="fc" id="L30">  public PoolManager(List&lt;RegistrationRecordItem&gt; registeredRecords) {</span>
+<span class="fc" id="L31">    this.registeredRecords = registeredRecords;</span>
+<span class="fc" id="L32">  }</span>
+
+  /**
+   * Get registered records list.
+   *
+   * @return registered records list
+   */
+  public List&lt;RegistrationRecordItem&gt; getRegisteredRecords() {
+<span class="fc" id="L40">    return registeredRecords;</span>
+  }
+
+  /**
+   * Check whether the record is existing in the list.
+   *
+   * @param possibleRecord possible record to be added
+   * @return boolean, check result
+   */
+  private boolean recordExists(Application possibleRecord) {
+<span class="fc bfc" id="L50" title="All 2 branches covered.">    if (registeredRecords.isEmpty()) {</span>
+<span class="fc" id="L51">      return false;</span>
+    }
+
+<span class="fc bfc" id="L54" title="All 2 branches covered.">    for (RegistrationRecordItem record : registeredRecords) {</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">      if (record.isSameAsApplication(possibleRecord)) {</span>
+<span class="fc" id="L56">        return true;</span>
+      }
+<span class="fc" id="L58">    }</span>
+<span class="fc" id="L59">    return false;</span>
+  }
+
+  /**
+   * Add possible record to the registered records list.
+   *
+   * @param possibleRecord the application to be added
+   * @return whether the adding method is run successfully
+   */
+  public boolean addRegistrationRecord(Application possibleRecord) {
+<span class="fc bfc" id="L69" title="All 2 branches covered.">    if (recordExists(possibleRecord)) {</span>
+<span class="fc" id="L70">      return false;</span>
+    }
+
+<span class="fc" id="L73">    registeredRecords.add(</span>
+<span class="fc" id="L74">        new RegistrationRecordItem(possibleRecord.getDriver(), possibleRecord.getVehicle()));</span>
+<span class="fc" id="L75">    return true;</span>
+  }
+
+
+  public String provideDriverInfo(String lastName) {
+<span class="fc" id="L80">    List&lt;String&gt; infos = new ArrayList&lt;&gt;();</span>
+
+<span class="fc" id="L82">    List&lt;RegistrationRecordItem&gt; recordsFilterByLastName = this.getRegisteredRecords().stream()</span>
+<span class="fc" id="L83">        .filter(record -&gt; record.getDriver().getName().getLastName().equals(lastName))</span>
+<span class="fc" id="L84">        .collect(Collectors.toList());</span>
+
+<span class="fc bfc" id="L86" title="All 2 branches covered.">    if (recordsFilterByLastName.isEmpty()) {</span>
+<span class="fc" id="L87">      infos.add(</span>
+          &quot;No registered driver found with last name: &quot; + lastName
+      );
+<span class="fc" id="L90">      return View.listToString(infos);</span>
+    }
+
+    // Aggragte records by drivers
+<span class="fc" id="L94">    HashMap&lt;Driver, List&lt;Vehicle&gt;&gt; driverVehicleHashMap = new HashMap&lt;&gt;();</span>
+<span class="fc bfc" id="L95" title="All 2 branches covered.">    for (RegistrationRecordItem record : recordsFilterByLastName) {</span>
+<span class="fc" id="L96">      Driver driver = record.getDriver();</span>
+<span class="pc bpc" id="L97" title="1 of 2 branches missed.">      if (!driverVehicleHashMap.containsKey(driver)) {</span>
+<span class="fc" id="L98">        driverVehicleHashMap.put(driver, new ArrayList&lt;&gt;());</span>
+      }
+<span class="fc" id="L100">      driverVehicleHashMap.get(driver).add(record.getVehicle());</span>
+<span class="fc" id="L101">    }</span>
+
+    // sort driver by first name
+<span class="fc" id="L104">    var drivers = new ArrayList&lt;Driver&gt;(driverVehicleHashMap.keySet());</span>
+<span class="fc" id="L105">    drivers.sort(Comparator.comparing(driver -&gt; driver.getName().getFirstName()));</span>
+
+<span class="fc" id="L107">    StringBuilder info = new StringBuilder();</span>
+<span class="fc bfc" id="L108" title="All 2 branches covered.">    for (Driver driver : drivers) {</span>
+<span class="fc" id="L109">      infos.add(extractDriverInfo(driver, driverVehicleHashMap.get(driver)));</span>
+<span class="fc" id="L110">    }</span>
+
+<span class="fc" id="L112">    return View.listToString(infos);</span>
+  }
+
+  /**
+   * Append vehicle information in a string
+   *
+   * @param record a specific record in registered records list.
+   * @return a string, which stores the information of a vehicle
+   */
+  private static String extractDriverInfo(Driver driver, List&lt;Vehicle&gt; vehicles) {
+<span class="fc" id="L122">    StringBuilder info = new StringBuilder();</span>
+
+    // append driver's name
+<span class="fc" id="L125">    info.append(driver.getName().getLastName())</span>
+<span class="fc" id="L126">        .append(&quot;, &quot;).append(driver.getName().getFirstName()).append(&quot;\n&quot;);</span>
+
+    // append vehicle's information
+<span class="fc bfc" id="L129" title="All 2 branches covered.">    for (Vehicle vehicle : vehicles) {</span>
+<span class="fc" id="L130">      info.append(&quot;    &quot;).append(vehicle.getVehicleInformation().getYearOfVehicle())</span>
+<span class="fc" id="L131">          .append(&quot; &quot;).append(vehicle.getVehicleInformation().getColor())</span>
+<span class="fc" id="L132">          .append(&quot; &quot;).append(vehicle.getVehicleInformation().getMake())</span>
+<span class="fc" id="L133">          .append(&quot; &quot;).append(vehicle.getVehicleInformation().getModel())</span>
+<span class="fc" id="L134">          .append(&quot;, &quot;).append(vehicle.getVehicleInformation().getLicensePlateNumber())</span>
+<span class="fc" id="L135">          .append(&quot;\n&quot;);</span>
+<span class="fc" id="L136">    }</span>
+
+    // append driving violation records
+<span class="fc" id="L139">    List&lt;DriverHistoryItem&gt; driverHistories = driver.getDriverHistories();</span>
+<span class="pc bpc" id="L140" title="1 of 2 branches missed.">    if (!driverHistories.isEmpty()) {</span>
+<span class="fc" id="L141">      info.append(&quot;    Driving violations:\n&quot;);</span>
+<span class="fc bfc" id="L142" title="All 2 branches covered.">      for (DriverHistoryItem driverHistoryItem : driverHistories) {</span>
+<span class="fc" id="L143">        info.append(&quot;    &quot;).append(&quot;    &quot;)</span>
+<span class="fc" id="L144">            .append(driverHistoryItem.getViolationType().toString()).append(&quot;\n&quot;);</span>
+<span class="fc" id="L145">      }</span>
+    }
+
+<span class="fc" id="L148">    return info.toString();</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

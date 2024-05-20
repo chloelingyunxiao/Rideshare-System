@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Application.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">final_project_option2</a> &gt; <a href="index.source.html" class="el_package">application</a> &gt; <span class="el_source">Application.java</span></div><h1>Application.java</h1><pre class="source lang-java linenums">package application;
+
+import driver.Driver;
+import java.util.Objects;
+import vehicle.Vehicle;
+
+/**
+ * Application is a class that represents a new record application. It is a possible record to be
+ * stored in pool. It stores information of driver and vehicle.
+ */
+public class Application {
+
+  private Driver driver;
+  private Vehicle vehicle;
+
+  /**
+   * Constructor of Application
+   *
+   * @param driver
+   * @param vehicle
+   */
+<span class="fc" id="L22">  public Application(Driver driver, Vehicle vehicle) {</span>
+<span class="fc" id="L23">    this.driver = driver;</span>
+<span class="fc" id="L24">    this.vehicle = vehicle;</span>
+<span class="fc" id="L25">  }</span>
+
+  /**
+   * Get driver object
+   *
+   * @return - driver object
+   */
+  public Driver getDriver() {
+<span class="fc" id="L33">    return driver;</span>
+  }
+
+  /**
+   * Get vehicle object
+   *
+   * @return - vehicle object
+   */
+  public Vehicle getVehicle() {
+<span class="fc" id="L42">    return vehicle;</span>
+  }
+
+
+  /**
+   * Indicates whether some other object is &quot;equal to&quot; this one.
+   *
+   * @param o the reference object with which to compare.
+   * @return {@code true} if this object is the same as the obj argument; {@code false} otherwise.
+   */
+  @Override
+  public boolean equals(Object o) {
+<span class="nc bnc" id="L54" title="All 2 branches missed.">    if (this == o) {</span>
+<span class="nc" id="L55">      return true;</span>
+    }
+<span class="nc bnc" id="L57" title="All 4 branches missed.">    if (o == null || getClass() != o.getClass()) {</span>
+<span class="nc" id="L58">      return false;</span>
+    }
+<span class="nc" id="L60">    Application that = (Application) o;</span>
+<span class="nc bnc" id="L61" title="All 4 branches missed.">    return Objects.equals(driver, that.driver) &amp;&amp; Objects.equals(vehicle,</span>
+        that.vehicle);
+  }
+
+  /**
+   * Returns a hash code value for the object. This method is supported for the benefit of hash
+   * tables such as those provided by {@link java.util.HashMap}.
+   *
+   * @return a hash code value for this object.
+   */
+  @Override
+  public int hashCode() {
+<span class="nc" id="L73">    return Objects.hash(driver, vehicle);</span>
+  }
+
+  /**
+   * Returns a string representation of the object. In general, the {@code toString} method returns
+   * a string that &quot;textually represents&quot; this object. The result should be a concise but
+   * informative representation that is easy for a person to read.
+   *
+   * @return a string representation of the object.
+   */
+
+  @Override
+  public String toString() {
+<span class="nc" id="L86">    return &quot;Application{&quot; +</span>
+        &quot;driver=&quot; + driver +
+        &quot;, vehicle=&quot; + vehicle +
+        '}';
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
